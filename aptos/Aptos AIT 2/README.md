@@ -132,6 +132,7 @@ https://aptos-node.info/
 [çalışan bir node örneği]
 ![çalışan](https://user-images.githubusercontent.com/73015593/177657023-c4700b90-25fd-4e1a-91bb-bedb987d350d.PNG)
 
+
 # KYC işlemleri
 
 ## KYC sitesine gidiyoruz.
