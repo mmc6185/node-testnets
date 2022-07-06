@@ -6,6 +6,7 @@
 Aptos AIT 2 testnetine yaklaşık dünya genelinden 200 kişi seçilecek.Her bir katılımcı en az 500 aptos token kazanacak. Daha iyi performans gösteren bazı katılımcılar ek 200 aptos token daha kazanacak.
 
 [Daha fazla detay için medium makalesi]
+
 https://medium.com/aptoslabs/welcome-to-aptos-incentivized-testnet-2-af26e2fd69a7
 
 ## Sistem gereksinimleri
