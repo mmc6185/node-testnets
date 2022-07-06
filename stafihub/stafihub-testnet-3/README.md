@@ -157,14 +157,15 @@ stafihubd keys add walletName
 [Görseldeki gibi kurtarma ifadelerinizi kaydetmeyi unutmayın. yoksa cüzdanınıza erişemezsiniz]
 ![cüzdan1](https://user-images.githubusercontent.com/73015593/177641324-d3723583-739c-4268-af85-33a90a950427.png)
 
+
 ## Eski cüzdanımızı kurtarma ifadelerini kullanarak recover ediyoruz. (stafihub-testnet-2 katılanlar için)
 ```
 stafihubd keys add walletName --recover
 ```
-https://user-images.githubusercontent.com/73015593/177641003-3070518b-b505-44f8-80fb-127e0b6101d9.PNG
+![cüzdan](https://user-images.githubusercontent.com/73015593/177641003-3070518b-b505-44f8-80fb-127e0b6101d9.PNG)
 
 ## Sync tamamlandıktan sonra validator oluşturabilmek için discord kanalına gidiyoruz. Görselde görüldüğü gibi stafi-hub-faucet kanalından token istiyoruz.
-https://user-images.githubusercontent.com/73015593/177642897-6568649a-471f-4cbc-8afe-d860fd967730.PNG
+![FAUCET](https://user-images.githubusercontent.com/73015593/177642897-6568649a-471f-4cbc-8afe-d860fd967730.PNG)
 
 ## Validator oluşturuyoruz. NodeName kısmına kendi node ismimizi.WalletName kısmına ise cüzdan ismimizi giriyoruz 
 ```
