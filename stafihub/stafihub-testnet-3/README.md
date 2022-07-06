@@ -2,14 +2,14 @@
 
 ![stafihub](https://user-images.githubusercontent.com/73015593/177637610-b96608a2-e2b9-4baf-8b78-d6a6caf60f99.jpg)
 
-# Sistem gereksinimleri
+## Sistem gereksinimleri
 ```
 8GB RAM
 300 GB SSD
 4 vCPU
 ```
 
-# Stafihub tesnet - 2 katılanlar öncelikle dosyalarını silmesi lazım:
+## Stafihub tesnet - 2 katılanlar öncelikle dosyalarını silmesi lazım:
 ```
 sudo systemctl stop stafihubd && \
 sudo systemctl disable stafihubd && \
@@ -20,31 +20,31 @@ rm -rf .stafihub stafihub && \
 rm -rf $(which stafihubd)
 ```
 
-## Node kurulumu
+# Node kurulumu
 
-# root yetkisi kazanıyoruz:
+## root yetkisi kazanıyoruz:
 ```
 sudo su
 ```
 
-# root dizinine gidiyoruz:
+## root dizinine gidiyoruz:
 ```
 cd /root
 ```
 
-# Sistem güncellemesi yapıyoruz:
+## Sistem güncellemesi yapıyoruz:
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
 
-# Kütüphane kurulumu yapıyoruz:
+## Kütüphane kurulumu yapıyoruz:
 ```
 sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils -y < "/dev/null"
 ```
 
 
-# Go kurulumu yapıyoruz:
+## Go kurulumu yapıyoruz:
 ```
 cd $HOME
 wget -O go1.18.2.linux-amd64.tar.gz https://go.dev/dl/go1.18.2.linux-amd64.tar.gz
@@ -57,13 +57,13 @@ go version
 ```
 
 
-# Stafi'nin github dosyasını stafi repository'den sunucumuza klonluyoruz
+## Stafi'nin github dosyasını stafi repository'den sunucumuza klonluyoruz
 ```
 git clone --branch public-testnet-v3 https://github.com/stafihub/stafihub
 ```
 
 
-# Yazılımı kuruyoruz
+## Yazılımı kuruyoruz
 ```
 cd $HOME/stafihub && make install
 ```
@@ -71,7 +71,7 @@ cd $HOME/stafihub && make install
 ![makeinstall](https://user-images.githubusercontent.com/73015593/177639669-9be70efd-6e7a-465e-98b2-05a51e2cfb7a.png)
 
 
-# initialize (başlatma) işlemini yapıyoruz.NodeName kısmına kendi validator ismimizi giriyoruz.
+## initialize (başlatma) işlemini yapıyoruz.NodeName kısmına kendi validator ismimizi giriyoruz.
 ```
 stafihubd init NodeName --chain-id stafihub-public-testnet-3
 ```
@@ -79,14 +79,14 @@ stafihubd init NodeName --chain-id stafihub-public-testnet-3
 ![init](https://user-images.githubusercontent.com/73015593/177640110-9ade0d7e-da32-49ea-a345-b5d30cbb3826.png)
 
 
-# Genesis dosyasını indiriyoruz:
+## Genesis dosyasını indiriyoruz:
 ```
 wget -O $HOME/.stafihub/config/genesis.json "https://raw.githubusercontent.com/stafihub/network/main/testnets/stafihub-public-testnet-3/genesis.json"
 ```
 ![wge](https://user-images.githubusercontent.com/73015593/177640695-e9e58600-12f0-4d14-9127-ab4d553489ef.png)
 
 
-# Node için gerekli konfigurasyonları yapıyoruz.
+## Node için gerekli konfigurasyonları yapıyoruz.
 -minimum-gas-prices ayarlıyoruz.
 -peer ekliyoruz
 ```
@@ -96,7 +96,7 @@ peers="2e48b16575a278b90b605cb243a48c909de7fd03@194.60.201.136:26656,c8ba1915c78
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.stafihub/config/config.toml
 ```
 
-# Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır) 
+## Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır) 
 ```
 pruning="custom"
 pruning_keep_recent="100"
@@ -108,13 +108,13 @@ sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.stafihub/config/app.toml
 ```
 
-# İndexer kapatırız (Disk kullanımını düşürür) 
+## İndexer kapatırız (Disk kullanımını düşürür) 
 ```
 indexer="null"
 sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.stafihub/config/config.toml
 ```
 
-# Servis dosyası oluşturup node'umuzu başlatıyoruz
+## Servis dosyası oluşturup node'umuzu başlatıyoruz
 ```
 echo "[Unit]
 Description=StaFiHub Node
@@ -139,7 +139,7 @@ sudo systemctl enable stafihubd
 sudo systemctl restart stafihubd
 ```
 
-#Sync kontrolü için aşağıdaki komutu gireriz. sync olmak için catching_up : false çıktısı almamız lazım.
+## Sync kontrolü için aşağıdaki komutu gireriz. sync olmak için catching_up : false çıktısı almamız lazım.
 ```
 stafihubd status 2>&1 | jq .SyncInfo
 ```
@@ -150,27 +150,27 @@ stafihubd status 2>&1 | jq .SyncInfo
 [sync olan bir node böyle gözükür]
 ![height](https://user-images.githubusercontent.com/73015593/177642339-7b3dfe8b-e7e5-4968-8fc4-93bd6c4fb3cd.png)
 
-# Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın (stafihub-testnet-2 katılmayanlar için)
+## Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın (stafihub-testnet-2 katılmayanlar için)
 ```
 stafihubd keys add walletName
 ```
 [Görseldeki gibi kurtarma ifadelerinizi kaydetmeyi unutmayın. yoksa cüzdanınıza erişemezsiniz]
 ![cüzdan1](https://user-images.githubusercontent.com/73015593/177641324-d3723583-739c-4268-af85-33a90a950427.png)
 
-# Eski cüzdanımızı kurtarma ifadelerini kullanarak recover ediyoruz. (stafihub-testnet-2 katılanlar için)
+## Eski cüzdanımızı kurtarma ifadelerini kullanarak recover ediyoruz. (stafihub-testnet-2 katılanlar için)
 ```
 stafihubd keys add walletName --recover
 ```
 https://user-images.githubusercontent.com/73015593/177641003-3070518b-b505-44f8-80fb-127e0b6101d9.PNG
 
-# Sync tamamlandıktan sonra validator oluşturabilmek için discord kanalına gidiyoruz. Görselde görüldüğü gibi stafi-hub-faucet kanalından token istiyoruz.
+## Sync tamamlandıktan sonra validator oluşturabilmek için discord kanalına gidiyoruz. Görselde görüldüğü gibi stafi-hub-faucet kanalından token istiyoruz.
 https://user-images.githubusercontent.com/73015593/177642897-6568649a-471f-4cbc-8afe-d860fd967730.PNG
 
-# Validator oluşturma: 
+## Validator oluşturuyoruz. NodeName kısmına kendi node ismimizi.WalletName kısmına ise cüzdan ismimizi giriyoruz 
 ```
 stafihubd tx staking create-validator \
 --moniker="NodeName" \
---amount=48885000ufis \
+--amount=1000000ufis \
 --gas auto \
 --fees=5000ufis \
 --pubkey=$(stafihubd tendermint show-validator) \
@@ -183,46 +183,46 @@ stafihubd tx staking create-validator \
 --yes
 ```
 
-# validator oluştuktan sonra böyle bir çıktı gelir.
+## validator oluştuktan sonra böyle bir çıktı gelir.
 ![txhash](https://user-images.githubusercontent.com/73015593/177646080-e461110d-bbfa-4895-9ba9-7dcd81ce3d15.PNG)
 
-# Validator oluşturup oluşturulmadığını explorerda txhash aratarak kontrol edebiliriz
+## Validator oluşturup oluşturulmadığını explorerda txhash aratarak kontrol edebiliriz
 https://testnet-explorer.stafihub.io/stafi-hub-testnet/staking
 ![suc](https://user-images.githubusercontent.com/73015593/177646264-e75d1681-e4e7-4493-a6c2-b6fa87f03459.PNG)
 
-# Ayrıca explorerdan kendi ismimizi kontrol edebiliriz
+## Ayrıca explorerdan kendi ismimizi kontrol edebiliriz
 https://testnet-explorer.stafihub.io/stafi-hub-testnet/staking
 ![explorer](https://user-images.githubusercontent.com/73015593/177646631-9a9cbac0-22ee-46ea-90a8-53702f10802f.PNG)
 
 
-## Yararlı komutlar
+# Yararlı komutlar
 
-# Logları izlemek için
+## Logları izlemek için
 ```
 journalctl -fu stafihubd -o cat
 ```
-# Servis başlatmak için
+## Servis başlatmak için
 ```
 systemctl start stafihubd
 ```
-# Servis durdurmak için
+## Servis durdurmak için
 ```
 systemctl stop stafihubd
 ```
-# Servis tekrar başlatmak için
+## Servis tekrar başlatmak için
 ```
 systemctl restart stafihubd
 ```
-# Sync durumuna bakmak için
+## Sync durumuna bakmak için
 ```
 stafihubd status 2>&1 | jq .SyncInfo
 ```
-# Cüzdandaki token miktarını sorgulama komutu
+## Cüzdandaki token miktarını sorgulama komutu
 ```
 stafihub query bank balances walletAddress
 ```
-# Cüzdandaki token miktarı sorgulama komutu
+## Cüzdandaki token miktarı sorgulama komutu
 ```
 stafihubd query bank balances walletname
 ```
-# Explorer linki: https://testnet-explorer.stafihub.io/stafi-hub-testnet
+## Explorer linki: https://testnet-explorer.stafihub.io/stafi-hub-testnet
