@@ -117,6 +117,7 @@ nano /root/.forta/config.yml
 ## Alchemy'den kopyaladığımız linki url kısmına yapıştırıyoruz.Ardından ctrl x y ile kaydedip çıkıyoruz.
 
 [ikinci hali böyle]
+
 ![second](https://user-images.githubusercontent.com/73015593/177834269-9b481759-09d6-4574-9d09-8ac01d967cff.PNG)
 
 
@@ -161,6 +162,7 @@ systemctl restart forta
 
 ## Forta servisimizi kontrol ediyoruz
 [Başarılı çalışan bir servis]
+
 ![runnig](https://user-images.githubusercontent.com/73015593/177838547-34ab9d76-9d15-42bb-997a-751dde86fac5.PNG)
 
 ## Alchemy sitesinden gelen istek sayısını kontrol ediyoruz.
