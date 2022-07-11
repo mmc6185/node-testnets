@@ -95,7 +95,7 @@ sudo apt install tmux
 tmux new -s sui
 ```
 
-## sui-node isimli binary dosya oluşturuyoruz. ()
+## sui-node isimli binary dosya oluşturuyoruz. (Bu uzun bir süre alabilir.)
 ```
 cargo build --release -p sui-node
 ```
