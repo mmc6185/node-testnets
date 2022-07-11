@@ -160,6 +160,7 @@ curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
 ![queey](https://user-images.githubusercontent.com/73015593/178360928-5854a73b-662d-46d9-9a19-e008c13dfaf1.jpg)
 
 ## validator oluşturuyoruz. NodeName kısmına validator ismimizi giriyoruz. WalletName kısmına cüzdan ismimizi giriyoruz.
+```
 ./stchaincli tx staking create-validator \
 --amount=100000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
@@ -172,11 +173,7 @@ curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
 --min-self-delegation=1 \
 --from=WalletName \ 
 --gas=auto 
-
-
-
-
-
+```
 
 
 
