@@ -39,7 +39,7 @@ sudo ./service start meson_cdn
 ## Çalışan node'larımıza [Node](https://dashboard.meson.network/user_node) sitesinden bakıyoruz.
 ![noe](https://user-images.githubusercontent.com/73015593/178380480-a619df99-836f-47e4-8c69-8da5d0eb94ec.jpg)
 
-## Toplam kazandığımız ödüllere [Toplam] sitesine bakarak kontrol ediyoruz.
+## Toplam kazandığımız ödüllere [Toplam](https://dashboard.meson.network/token_balance/msntt) sitesine bakarak kontrol ediyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/178380566-db3022ce-70c1-4b27-b2a9-9d672c6f8b28.png)
 
 ## Servis kontrol etmek için:
