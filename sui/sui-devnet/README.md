@@ -43,6 +43,7 @@ source $HOME/.cargo/env
 rustc --version
 ```
 [rustc 1.62.0 çıktısı alıyoruz]
+
 ![version](https://user-images.githubusercontent.com/73015593/178137217-5ecb4d32-7905-48a4-bf22-c80da0b6d3e6.PNG)
 
 ## Sui'nin github dosyasını sui repository'den sunucumuza klonluyoruz.
