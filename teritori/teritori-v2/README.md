@@ -80,6 +80,11 @@ teritorid init NodeName --chain-id teritori-testnet-v2
 sed -i.bak 's/persistent_peers =.*/persistent_peers = "0b42fd287d3bb0a20230e30d54b4b8facc412c53@176.9.149.15:26656,2371b28f366a61637ac76c2577264f79f0965447@176.9.19.162:26656,2f394edda96be07bf92b0b503d8be13d1b9cc39f@5.9.40.222:26656"/' $HOME/.teritorid/config/config.toml
 ```
 
+## Minimum gas prices ayarlıyoruz.
+```
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00125utori\"/" $HOME/.teritorid/config/app.toml
+```
+
 ## Genesis.json dosyasını indiriyoruz.
 ```
 wget -O ~/.teritorid/config/genesis.json https://raw.githubusercontent.com/TERITORI/teritori-chain/main/testnet/teritori-testnet-v2/genesis.json
@@ -88,25 +93,42 @@ wget -O ~/.teritorid/config/genesis.json https://raw.githubusercontent.com/TERIT
 
 # Cosmovisor kuruyoruz. (Cosmovisor, zincir yükseltmeleri için önceden binary dosyaları indirmemize izin verir, Böylece sıfır (veya sıfıra yakın) kesinti zinciri yükseltmeleri yapabileceğiniz anlamına gelir.)
 
-## cosmovisor'ın github dosyasını cosmos-sdk repository'den sunucumuza klonluyoruz.
+## cosmovisor indiriyoruz.
 ```
-go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
+wget https://github.com/cosmos/cosmos-sdk/releases/download/cosmovisor%2Fv1.1.0/cosmovisor-v1.1.0-linux-amd64.tar.gz
+```
+![image](https://user-images.githubusercontent.com/73015593/180601475-7b35e46d-e435-4fbf-9fa3-7d09a43da367.png)
+
+## Sıkıştırılmış dosyayı tar komutu ile çıkartıyoruz.
+```
+tar -xf cosmovisor-v1.1.0-linux-amd64.tar.gz
+```
+![image](https://user-images.githubusercontent.com/73015593/180601537-0ee76502-9e08-4e3f-a7cd-9b96e3cdb41d.png)
+
+## cosmovisor dosyasonı execute (çalıştır) yetkisi veriyoruz.
+```
+chmod +x cosmovisor
 ```
 
-## Dizinleri belirtiyoruz.
+## cosmovisor dosyasını taşıyoruz.
+```
+sudo mv cosmovisor /root/go/bin 
+```
+
+## Ortam değişkenlerini ayarlıyoruz.
 ```
 export DAEMON_NAME=teritorid
-export DAEMON_HOME=$HOME/.teritori
+export DAEMON_HOME=/root/.teritorid
 source ~/.profile
 ```
 
-## Dizinleri oluşturuyoruz.
+## Yükseltmeler için gerekli klasörleri oluştuuyoruz.
 ```
 mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
-## teritorid binary dosyasını başka bir dizine kopyalıyoruz.
+## Teritorid binary dosyasını cosmovisor içine kopyalıyoruz.
 ```
 cp $HOME/go/bin/teritorid $DAEMON_HOME/cosmovisor/genesis/bin
 ```
@@ -126,10 +148,10 @@ Restart=always
 RestartSec=3
 LimitNOFILE=4096
 Environment="DAEMON_NAME=teritorid"
-Environment="DAEMON_HOME=$HOME/.teritori"
+Environment="DAEMON_HOME=$HOME/.teritorid"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
-Environment="DAEMON_LOG_BUFFER_SIZE=512"
+Environment="DAEMON_LOG_BUFFER_SIZE=512"A
 
 [Install]
 WantedBy=multi-user.target
@@ -142,10 +164,11 @@ systemctl enable teritorid
 systemctl daemon-reload
 systemctl restart teritorid
 ```
+![image](https://user-images.githubusercontent.com/73015593/180601911-55ab7d64-ad71-425e-9bef-8bf39dffed47.png)
 
 ## Loglarımıza bakıyoruz.
 ```
-journalctl -u teritorid.service -f -n 100
+journalctl -u teritorid.service -f -o cat 
 ```
 
 ## Sync durumuna bakıyoruz. (false çıktısı almamız gerekiyor)
