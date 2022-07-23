@@ -170,19 +170,105 @@ systemctl restart teritorid
 ```
 journalctl -u teritorid.service -f -o cat 
 ```
+![image](https://user-images.githubusercontent.com/73015593/180605902-5aa3c864-6f99-4816-841e-68dde584ebc0.png)
 
 ## Sync durumuna bakıyoruz. (false çıktısı almamız gerekiyor)
 ```
 teritorid status 2>&1 | jq .SyncInfo
 ```
+![image](https://user-images.githubusercontent.com/73015593/180605915-064b4920-5f4b-4f06-b84d-0edce86a8c9e.png)
 
 ## Cüzdan oluşturuyoruz. WalletName kısmına kendi cüzdan isminizi yazın (Cüzdan bilgilerinizi kaydetmeyi unutmayın)
 ```
 teritorid keys add WalletName
 ```
+![image](https://user-images.githubusercontent.com/73015593/180606007-6728a16e-198c-431b-b840-53c3be1abca4.png)
 
+## Cüzdan oluşturduktan sonra token almak için discord kanalına gidiyoruz.
+https://discord.com/invite/teritori
 
+## Discord grubunda faucet kanalına giderek token istiyoruz. (walletAddress kısmına cüzdan adresimizi yazıyoruz)
+-token talep etmek için : $request walletAddress
+-token miktarı sorgulamak için : $request walletAddress
+![image](https://user-images.githubusercontent.com/73015593/180606084-7943ebf1-6190-4b26-9c48-b29ee410c9d5.png)
 
+## Cüzdan bakiyemizi sorguluyoruz. walletAddress kısmına cüzdan adresimizi yazıyoruz.
+```
+teritorid q bank balances walletAddress
+```
+![image](https://user-images.githubusercontent.com/73015593/180606221-edd632b9-c77a-4861-9b3b-57826cb9a4f7.png)
+
+## Validator oluşturuyoruz. nodeName kısmına validator ismimizi giriyoruz.walletName kısmına cüzdan ismimizi giriyoruz.
+```
+teritorid tx staking create-validator \
+ --commission-max-change-rate=0.01 \
+ --commission-max-rate=0.2 \
+ --commission-rate=0.05 \
+ --amount 1000000utori \
+ --pubkey=$(teritorid tendermint show-validator) \
+ --moniker=nodeName \
+ --chain-id=teritori-testnet-v2 \
+ --min-self-delegation=1 \
+ --fees 555utori \
+ --from=walletName
+ ```
+![image](https://user-images.githubusercontent.com/73015593/180607300-88d99a04-2f52-4fd1-b20a-ad74847c6634.png)
+
+## Explorerdan kendimizi kontrol ediyoruz.
+https://teritori.explorers.guru/
+![image](https://user-images.githubusercontent.com/73015593/180607528-36c5e289-2d17-4011-b9a6-51217b728548.png)
+
+# Yararlı komutlar
+
+## Logları izlemek için:
+```
+journalctl -fu teritorid -o cat
+```
+
+## cüzdan bakiyesi sorgulama (walletAddress kısmına cüzdan adresimizi yazıyoruz):
+```
+teritorid q bank balances walletAddress
+```
+
+## Servis başlatmak için:
+```
+systemctl start teritorid
+```
+
+## Servis durdurmak için:
+```
+systemctl stop teritorid
+```
+
+## Servis tekrar başlatmak için:
+```
+systemctl restart teritorid
+```
+
+## Sync kontrol etmek için:
+```
+teritorid status 2>&1 | jq .SyncInfo
+```
+
+## Node id öğrenmek için:
+```
+teritorid tendermint show-node-id
+```
+
+## kurtarma ifadeleri ile cüzdan recover etmek için (walletName kısmına cüzdan ismimizi giriyoruz.):
+```
+teritorid keys add walletName --recover
+```
+
+## Proposal katılmak için (voteNumber kısmına katılmak istediğimiz proposal'ın numarasını yazıyoruz. walletName kısmına cüzdan ismimizi giriyoruz. yes/no kısmında vermek istediğimiz oy'u belirtiyoruz.):
+```
+teritorid tx gov vote voteNumber yes/no --from walletName --chain-id=teritori-testnet-v2
+```
+
+## Token delege etmek için (validatorAddress kısmına validator adresimizi yazıyoruz. walletName kısmına cüzdan ismimizi giriyoruz):
+```
+teritorid tx staking delegate validatorAddress 10000000utori --from=walletName --chain-id=teritori-testnet-v2 --gas=auto
+```
 
 
 
