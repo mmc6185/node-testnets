@@ -121,6 +121,7 @@ docker-compose up -d
 
 ## Node.js kurulumu yapıyoruz.
 ```
+source ~/.bashrc
 apt-get install snapd
 sudo snap install node --channel=16/stable --classic
 ```
@@ -135,6 +136,7 @@ npm install -g npm@8.15.0
 ## Testnet cli indiriyoruz.
 ```
 npm i -g @bundlr-network/testnet-cli
+source $HOME/.profile
 ```
 
 ## Faucet sitesine gidiyoruz.Görseldeki gibi cüzdan adresimizi giriyoruz.
@@ -144,7 +146,10 @@ https://bundlr.network/faucet
 ## Twitter'da token isteğimizi paylaştıktan sonra url'i yapıştırıyoruz. ve aşağıdaki gibi bir çıktı alıyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/180610713-e362ad2d-c347-4b03-a23d-c8c967005c5c.png)
 
-## Cüzdanımızda bakiye sorgusı yapıyoruz.
+## Cüzdanımızda bakiye sorgusı yapıyoruz. walletAddress kısmına cüzdan adresimizi yazıyoruz.
+```
+testnet-cli balance walletAddress
+```
 ![image](https://user-images.githubusercontent.com/73015593/180610977-ee74ca81-a542-4b10-bb9b-c127dff5cb3b.png)
 
 ## Testnete katılıyoruz. bu işlem uzun sürebilir.
