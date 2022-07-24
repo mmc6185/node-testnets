@@ -43,7 +43,7 @@ md5sum stchain*
 ```
 [Beklenen çıktı]
 
-![md5](https://user-images.githubusercontent.com/73015593/177885177-738279f4-5c8b-457e-969b-8ffee2674839.png)
+![image](https://user-images.githubusercontent.com/73015593/180650764-8a17cdeb-1a2c-4829-9ae3-243b9b3a765d.png)
 
 
 ## Binary dosyalarına execute yetkisi verelim
