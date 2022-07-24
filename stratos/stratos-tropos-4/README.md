@@ -195,8 +195,7 @@ stchaind query bank balances walletAddress
 ```
 
 ## explorer'dan kendimizi kontrol ediyoruz. (Explorer yakında açılacak)
-https://explorer-tropos.thestratos.org/
-
+https://big-dipper-tropos.thestratos.org/
 
 
 
