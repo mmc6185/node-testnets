@@ -30,7 +30,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Kütüphane kurulumu yapıyoruz.
 ```
-sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils -y < "/dev/null"
+sudo apt install make clang pkg-config snapd libssl-dev build-essential git jq ncdu bsdmainutils -y < "/dev/null"
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180403285-107688bb-d141-4694-b7ce-69cc4a595792.png)
 
@@ -122,7 +122,6 @@ docker-compose up -d
 ## Node.js kurulumu yapıyoruz.
 ```
 source ~/.bashrc
-apt-get install snapd
 sudo snap install node --channel=16/stable --classic
 ```
 
