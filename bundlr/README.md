@@ -77,6 +77,9 @@ cp JsonDosyanız wallet.json
 ![image](https://user-images.githubusercontent.com/73015593/180603550-fb120c2e-e90a-4c14-896a-096e9f31acfd.png)
 
 ## wallet.json dosyasını validator-rust dizine kopyalıyoruz.
+```
+cp wallet.json ~/validator-rust
+```
 ![image](https://user-images.githubusercontent.com/73015593/180603628-57fd240d-a09f-4c70-9094-5f436a0249e8.png)
 
 ## validator-rust dizini altında .env dosyası oluşturuyoruz.
