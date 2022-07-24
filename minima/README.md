@@ -5,6 +5,16 @@
 
 # Node kurulumu
 
+## root yetkisi kazanıyoruz.
+```
+sudo su
+```
+
+## root dizini altına gidiyoruz.
+```
+cd /root
+```
+
 ## Minima scriptimizi çalıştırıyoruz.
 ```
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
