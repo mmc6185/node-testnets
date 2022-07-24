@@ -56,8 +56,8 @@ chmod +x stchaind
 ## Go kurulumu yapıyoruz (1.16+ üstü sürüm olmalı)
 ```
 cd $HOME
-wget -O go1.18.2.linux-amd64.tar.gz https://go.dev/dl/go1.18.2.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz && rm go1.18.2.linux-amd64.tar.gz
+wget -O go1.18.3.linux-amd64.tar.gz https://go.dev/dl/go1.18.3.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz && rm go1.18.3.linux-amd64.tar.gz
 echo 'export GOROOT=/usr/local/go' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 echo 'export GO111MODULE=on' >> $HOME/.bashrc
@@ -66,6 +66,14 @@ go version
 ```
 ![go](https://user-images.githubusercontent.com/73015593/178150466-30977fc1-7b48-425d-9a5d-55aa217bda8a.png)
 
+## Go sürümü hatası alırsanız 
+```
+snap remove go
+apt purge golang*
+
+snap install go --classic
+go mod tidy
+```
 
 ## Source code ile binary dosyayı derliyoruz.
 ```
@@ -83,12 +91,14 @@ mv $HOME/stratos-chain/build/stchaind ./
 
 ## Binary dosyalarını $GOPATH/bin dizinine yüklüyoruz.
 ```
+cd ~/stratos-chain
 make install
 ```
 ![install](https://user-images.githubusercontent.com/73015593/178150615-3dee85dd-4faf-4e72-9d94-ce8390175d9e.png)
 
 ## initialize (başlatma) işlemi yapıyoruz. NodeName kısmına validator ismimizi yazıyoruz.
 ```
+cd $HOME
 ./stchaind init NodeName
 ```
 ![init](https://user-images.githubusercontent.com/73015593/178150764-ae31d7de-3efc-4043-a427-238ed7060563.png)
