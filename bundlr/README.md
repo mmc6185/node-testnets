@@ -121,7 +121,7 @@ docker-compose up -d
 
 ## Node.js kurulumu yapıyoruz.
 ```
-apt-get install snap
+apt-get install snapd
 sudo snap install node --channel=16/stable --classic
 ```
 
