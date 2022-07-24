@@ -34,8 +34,8 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ## Binary dosya kurulumu yapıyoruz
 ```
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaincli
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchaind
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaincli
+wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaind
 ```
 
 ## granularity kontrol edelim
@@ -43,6 +43,7 @@ wget https://github.com/stratosnet/stratos-chain/releases/download/v0.7.0/stchai
 md5sum stchain*
 ```
 [Beklenen çıktı]
+
 ![md5](https://user-images.githubusercontent.com/73015593/177885177-738279f4-5c8b-457e-969b-8ffee2674839.png)
 
 
