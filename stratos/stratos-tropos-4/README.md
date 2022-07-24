@@ -109,6 +109,10 @@ wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/gen
 wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/config.toml
 ```
 
+## addrbook.json dosyasını indiriyoruz.
+wget -O $HOME/.stchaind/config/addrbook.json "https://github.com/mmc6185/node-testnets/blob/main/stratos/stratos-tropos-4/addrbook.json?raw=true"
+
+
 ## genesis.json ve config.toml dosyalarını .stchaind/config/ dizini altına taşırız.
 ```
 mv config.toml $HOME/.stchaind/config/
@@ -150,27 +154,34 @@ journalctl -u stratosd -f
 ```
 ![stratos](https://user-images.githubusercontent.com/73015593/178208117-cb60b72d-69f8-4ba1-8d6b-8f2e0dab432c.png)
 
+## sync durumunu kontrol ediyoruz. (false çıktısı almamız gerekiyor)
+```
+stchaind  status 2>&1 | jq .SyncInfo
+```
 
 ## cüzdan oluşturuyoruz. WalletName kısmında kendi cüzdan adımızı yazıyoruz.
 ```
-./stchaincli keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletName
+stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletName
 ```
 ![key](https://user-images.githubusercontent.com/73015593/178202751-59ac87a6-fa9e-447a-9c15-b0eaf948559d.png)
 
 
-## Faucetten token alıyoruz. <your wallet address> kısmına cüzdan adresimizi yazıyoruz.
+## Faucetten token alıyoruz. walletAddress kısmına cüzdan adresimizi yazıyoruz.
 ```
-curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"ustos","address":"walletAddress"} ' https://faucet-tropos.thestratos.org/credit
 ```
 ![FAUCET](https://user-images.githubusercontent.com/73015593/178208491-0bc5292c-bba1-4107-8aa6-b1f6329c2492.PNG)
 
-## Cüzdanımızın bakiyesini sorguluyoruz.
+## Cüzdanımızın bakiyesini sorguluyoruz. (walletAddress kısmına kendi cüzdan adresimizi yazıyoruz.)
+```
+stchaind query bank balances walletAddress
+```
 ![queey](https://user-images.githubusercontent.com/73015593/178360928-5854a73b-662d-46d9-9a19-e008c13dfaf1.jpg)
 
-## validator oluşturuyoruz. NodeName kısmına validator ismimizi giriyoruz. WalletName kısmına cüzdan ismimizi giriyoruz.
+## validator oluşturuyoruz. NodeName kısmına validator ismimizi giriyoruz. WalletAddres kısmına cüzdan adresimizi giriyoruz.
 ```
 ./stchaincli tx staking create-validator \
---amount=100000000000ustos \
+--amount=1000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
 --chain-id=test-chain \
@@ -179,9 +190,12 @@ curl -X POST https://faucet-tropos.thestratos.org/faucet/<your wallet address>
 --commission-max-rate=0.20 \ 
 --commission-max-change-rate=0.01 \ 
 --min-self-delegation=1 \
---from=WalletName \ 
+--from=WalletAddress \ 
 --gas=auto 
 ```
+
+## explorer'dan kendimizi kontrol ediyoruz. (Explorer yakında açılacak)
+https://explorer-tropos.thestratos.org/
 
 
 
