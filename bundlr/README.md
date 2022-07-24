@@ -118,6 +118,7 @@ docker-compose build
 
 ## Validator'ü tekrar çalıştırıyoruz.
 ```
+cd ~/validator-rust
 docker-compose up -d
 ```
 
