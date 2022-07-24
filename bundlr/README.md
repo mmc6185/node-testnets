@@ -51,7 +51,9 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ![image](https://user-images.githubusercontent.com/73015593/180603107-0276548d-4657-473d-a7b3-838a63b8a285.png)
 
 ## Bundlr'ın github dosyasını Bundlr repository'den sunucumuza klonluyoruz.
+```
 git clone --recurse-submodules https://github.com/Bundlr-Network/validator-rust.git
+```
 ![image](https://user-images.githubusercontent.com/73015593/180603145-52f46685-82cc-4dac-b21b-3fd023f9a053.png)
 
 ## arweave sitesine giderek cüzdan oluşturuyoruz. (sol alttan + işaretine tıklıyoruz.)
