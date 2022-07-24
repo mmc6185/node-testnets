@@ -79,7 +79,6 @@ make build
 
 ## stchainli ve stchaind binary dosyalarını $HOME Dizinine taşıyoruz.
 ```
-mv $HOME/stratos-chain/build/stchaincli ./
 mv $HOME/stratos-chain/build/stchaind ./
 ```
 
