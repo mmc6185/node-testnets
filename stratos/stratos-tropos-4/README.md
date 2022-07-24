@@ -34,7 +34,6 @@ sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bs
 ## Binary dosya kurulumu yapıyoruz
 ```
 cd $HOME
-wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaincli
 wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaind
 ```
 
