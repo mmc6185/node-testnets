@@ -96,7 +96,8 @@ EOF
 ![image](https://user-images.githubusercontent.com/73015593/180605484-5db5287b-bb2f-4648-bdfd-dcd06279410d.png)
 
 ## Validator oluşturup çalıştırıyoruz.
-```
+``
+cd ~/validator-rust
 docker-compose up -d
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180608039-2ee14516-f6d8-49e2-8b72-93fbfcf26227.png)
