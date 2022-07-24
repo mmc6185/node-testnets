@@ -80,7 +80,7 @@ cp JsonDosyanız wallet.json
 
 ## wallet.json dosyasını validator-rust dizine kopyalıyoruz.
 ```
-cp wallet.json ~/validator-rust
+cp ~/wallet.json ~/validator-rust
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180603628-57fd240d-a09f-4c70-9094-5f436a0249e8.png)
 
