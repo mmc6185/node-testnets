@@ -110,8 +110,9 @@ wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/con
 ```
 
 ## addrbook.json dosyasını indiriyoruz.
+```
 wget -O $HOME/.stchaind/config/addrbook.json "https://github.com/mmc6185/node-testnets/blob/main/stratos/stratos-tropos-4/addrbook.json?raw=true"
-
+```
 
 ## genesis.json ve config.toml dosyalarını .stchaind/config/ dizini altına taşırız.
 ```
