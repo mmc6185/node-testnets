@@ -30,7 +30,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Kütüphane kurulumu yapıyoruz.
 ```
-sudo apt install make clang pkg-config snapd libssl-dev build-essential git jq ncdu bsdmainutils -y < "/dev/null"
+apt-get install git wget snapd curl jq libpq-dev libssl-dev build-essential pkg-config openssl ocl-icd-opencl-dev libopencl-clang-dev libgomp1 -y 2>/dev/null
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180403285-107688bb-d141-4694-b7ce-69cc4a595792.png)
 
