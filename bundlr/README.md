@@ -156,7 +156,7 @@ testnet-cli balance walletAddress
 
 ## Testnete katılıyoruz. bu işlem uzun sürebilir.
 ```
-testnet-cli join RkinCLBlY4L5GZFv8gCFcrygTyd5Xm91CzKlR6qxhKA -w ~/validator-rust/wallet.json ~/ -u  http://$(curl icanhazip.com):4444 -s 25000000000000
+testnet-cli join RkinCLBlY4L5GZFv8gCFcrygTyd5Xm91CzKlR6qxhKA -w ~/validator-rust/wallet.json ~/ -u  "http://$(curl icanhazip.com):4444" -s 25000000000000
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180611584-764b2363-0e76-4a49-a4ef-0cb2a35de5a1.png)
 
