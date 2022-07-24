@@ -180,7 +180,7 @@ stchaind query bank balances walletAddress
 
 ## validator oluşturuyoruz. NodeName kısmına validator ismimizi giriyoruz. WalletAddres kısmına cüzdan adresimizi giriyoruz.
 ```
-./stchaincli tx staking create-validator \
+./stchaind tx staking create-validator \
 --amount=1000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
