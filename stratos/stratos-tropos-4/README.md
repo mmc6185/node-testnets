@@ -72,7 +72,6 @@ snap remove go
 apt purge golang*
 
 snap install go --classic
-go mod tidy
 ```
 
 ## Source code ile binary dosyayı derliyoruz.
