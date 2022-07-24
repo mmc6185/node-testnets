@@ -48,7 +48,6 @@ md5sum stchain*
 
 ## Binary dosyalarına execute yetkisi verelim
 ```
-chmod +x stchaincli
 chmod +x stchaind
 ```
 ![stratos](https://user-images.githubusercontent.com/73015593/178150395-1f478902-f202-499b-a6ee-f39729d1d0f6.png)
