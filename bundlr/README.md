@@ -163,6 +163,10 @@ testnet-cli join RkinCLBlY4L5GZFv8gCFcrygTyd5Xm91CzKlR6qxhKA -w ~/validator-rust
 ## Explorer'da kendimizi kontrol ediyoruz.
 https://bundlr.network/explorer/
 
+## Loglara bakmak için: 
+```
+docker-compose -f $HOME/validator-rust/docker-compose.yml logs -f --tail 10
+```
 
 
 
