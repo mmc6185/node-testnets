@@ -168,6 +168,95 @@ screen -S terminal
 cd ~/rsnode
 ppd terminal
 ```
+![image](https://user-images.githubusercontent.com/73015593/180884393-d57cb317-7455-4efc-b420-2316079d09b7.png)
+
+
+## registerpeer işlemi yapıyoruz.Aşağıdaki gibi registered as PP successfully çıktısı almamız gerekli.
+```
+registerpeer
+```
+![image](https://user-images.githubusercontent.com/73015593/180886132-985304e7-ba5b-4819-9276-c0de0803f22f.png)
+
+## activate işlemi yapıyoruz. (activate <amount> <fee> <gas>)
+```
+activate 10000000000 10000 1000000
+```
+![image](https://user-images.githubusercontent.com/73015593/180886338-cd37ffd5-28c2-450d-8848-7d93eb2a2d46.png)
+
+## Node durumumuza bakıyoruz.
+```
+status
+```
+![image](https://user-images.githubusercontent.com/73015593/180886576-fdd002ee-6e73-4270-a8bb-89ee9f89bcf1.png)
+
+## Kazandığımız ödülleri kontrol etmek için (cüzdanAdresi kısmına cüzdan adresimizi yazıyoruz):
+--Utros stos'un 1.000.000.000 da 1 ine eşit.
+https://rest-tropos.thestratos.org/pot/rewards/wallet/cüzdanAdresi
+![image](https://user-images.githubusercontent.com/73015593/180886804-860779ef-b9cb-4d16-a852-043f8c72885f.png)
+
+# (opsiyonel) Otomatik dosya oluşturup yükleme (ödül almak için gerekli değil):
+
+## Ozon alımı yapıyoruz. (Eğer cüzdanımızda 100 token varsa)
+```
+prepay 100000000000 10000 600000
+```
+  
+## Ozon alımının başarılı olup olmadığını kontrol ediyoruz. WalletAddress kısmına cüzdan adresimizi yazıyoruz.
+```
+getoz walletAddress
+```
+![image](https://user-images.githubusercontent.com/73015593/180888582-96417f6d-b58f-49c5-90e3-93bb057b43a9.png)  
+  
+## ctrl+a d ile terminal screen den çıkıyoruz.  
+
+## upload isimli bir screen oluşturuyoruz.
+```
+screen -S upload
+```
+
+## upload isimli bir klasör oluşturuyoruz.
+```
+mkdir -p ~/upload
+```
+  
+## upload.sh script'i oluşturuyoruz.
+```
+nano $HOME/rsnode/upload.sh
+```
+  
+## script komutlarımızı yapıştırıyoruz ardından ctrl x y ile kaydedip çıkıyoruz.
+```
+#!/bin/bash
+while true;
+do /usr/bin/head -c 25M /dev/urandom > "$HOME/upload/test-$(date '+%Y%m%d%H%M')" ; ppd terminal exec put "$HOME/upload/test-$(date '+%Y%m%d%H%M')";
+sleep 900;
+/usr/bin/rm -rf "$HOME/upload/test*";
+sleep 1;
+done
+```
+![image](https://user-images.githubusercontent.com/73015593/180889190-01fd7b22-c6c9-422d-8958-47d057115474.png)
+  
+## upload.sh dosyasına executuble yetkisi veriyoruz.
+```
+cd $HOME/rsnode
+chmod +x upload.sh 
+./upload.sh
+```
+![image](https://user-images.githubusercontent.com/73015593/180891088-2c2bd036-0f4c-4f00-becd-c3ecb0e8f67b.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
