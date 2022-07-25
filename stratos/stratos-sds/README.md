@@ -194,11 +194,79 @@ status
 https://rest-tropos.thestratos.org/pot/rewards/wallet/cüzdanAdresi
 ![image](https://user-images.githubusercontent.com/73015593/180886804-860779ef-b9cb-4d16-a852-043f8c72885f.png)
 
+# Ek komutlar 
+  
+## Ozon almak için: (purchaseAmount kısmına ustos ile alacağımız miktar, fee amount kısmına fee miktarı, gasAmount kısmına gas yazıyoruz.) 
+Ozon, SDS tarafından kullanılan trafik birimidir. Ağ trafiğini içeren işlemler, ozonun yürütülmesini gerektirir. 
+--prepay <purchaseAmount> <feeAmount> <gasAmount>
+```
+prepay 10000000000 10000 1000000
+```
+  
+## Cüzdandaki ozon miktarını sorgulamak için: (walletAddress kısmına cüzdan adresini yazıyoruz.)
+```
+getoz walletAddress
+```
+![image](https://user-images.githubusercontent.com/73015593/180892216-e1a18eb4-d5f1-4cef-9044-a55bb44694f6.png)
+
+## Dosya yüklemek için:
+```
+put /root/.stafihub/test.info
+```
+![image](https://user-images.githubusercontent.com/73015593/180891673-c52a20e7-9e30-4f00-b136-425c2ddab412.png)
+
+## Yüklenen dosyaları listelemek için:
+![image](https://user-images.githubusercontent.com/73015593/180892343-03354dde-c8c8-4bff-9bbc-b120c586cd62.png)
+  
+## Yüklenen dosyayı paylaşmak için:
+FILE_HASH kısmına dosya hash'i gireceğiz.
+EXPIRY_TIME kısmına ne kadar süre sonra yok olacağını giriyoruz. (0 girersek dosya paylaşımı sonsuza kadar kalıcı olur.)
+PRIVATE kısmına dosyanın gizli veya public olacağını yazıyoruz. (0 girersek şifresiz, 1 ise şifreli)
+sharefile FILE_HASH EXPIRY_TIME PRIVATE
+```
+sharefile v05ahm52mafaujmvqodbnj2u4ld0edm611nlqp58 0 0 
+```
+![image](https://user-images.githubusercontent.com/73015593/180892716-a0e12f19-087a-412c-9c6e-9c37ae77612f.png)
+
+## Tüm paylaşılan dosyaları listelemek için:
+```
+allshare
+```
+![image](https://user-images.githubusercontent.com/73015593/180893298-e33565f6-3683-445e-8147-297624d4877d.png)
+
+## Yüklenen bir dosya silmek için. (FILE_HASH kısmındda dosya'nın hashini giriyoruz)
+```
+delete FILE_HASH
+```
+  
+## Dosya paylaşımını durdurmak için ShareId kısmına share id mizi yazıyoruz.:
+```
+cancelshare ShareId
+``` 
+  
+## Kaynak kullanımını görüntülemek için:
+```
+monitor
+```
+![image](https://user-images.githubusercontent.com/73015593/180893837-c42d93e5-27cc-4a18-bc7b-61ef2884db6b.png)
+
+## Kaynak kullanımı görüntülemesini kapatmak için:
+```
+stopmonitor
+```
+  
+## Cüzdan adreslerini listelemek için:
+```
+wallets
+```
+![image](https://user-images.githubusercontent.com/73015593/180893952-b91def6b-5a4a-4115-9892-dcb07727e3a5.png)
+
+ 
 # (opsiyonel) Otomatik dosya oluşturup yükleme (ödül almak için gerekli değil):
 
-## Ozon alımı yapıyoruz. (Eğer cüzdanımızda 100 token varsa)
+## Ozon alımı yapıyoruz. (Eğer cüzdanımızda 1 token varsa)
 ```
-prepay 100000000000 10000 600000
+prepay 1000000000 10000 600000
 ```
   
 ## Ozon alımının başarılı olup olmadığını kontrol ediyoruz. WalletAddress kısmına cüzdan adresimizi yazıyoruz.
