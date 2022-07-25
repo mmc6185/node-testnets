@@ -184,7 +184,7 @@ stchaind query bank balances walletAddress
 --amount=1000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
---chain-id=test-chain \
+--chain-id=tropos-4 \
 --keyring-backend=test \
 --commission-rate=0.10 \
 --commission-max-rate=0.20 \ 
