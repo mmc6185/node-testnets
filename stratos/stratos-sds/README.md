@@ -133,9 +133,10 @@ network_address = 'your node external ip'
 ## Son olarak config.toml dosyası aşağıdaki gibi gözükür.
 ![image](https://user-images.githubusercontent.com/73015593/180859798-456e15cd-fd1b-4a66-a6a0-2dba8d6ae212.png)
 
-## Faucetten token alıyoruz. WALLET_ADDRESS kısmına cüzdan adresimizi yazıyoruz.
+## Faucetten token alıyoruz. WalletAddress kısmına cüzdan adresimizi yazıyoruz.
 ```
-curl -X POST https://faucet-tropos.thestratos.org/wallet/WALLET_ADDRESS
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"ustos","address":"WalletAddress"} ' https://faucet-tropos.thestratos.org/credit
+
 ```
 
 ## Screen kurulumu yapıyoruz.
