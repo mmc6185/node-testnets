@@ -37,7 +37,7 @@ cd $HOME
 wget https://github.com/stratosnet/stratos-chain/releases/download/v0.8.0/stchaind
 ```
 
-## granularity kontrol edelim
+## stchaind'nin hash'ini kontrol edelim. (Görseldeki gibi çıktı almamız lazım)
 ```
 md5sum stchain*
 ```
