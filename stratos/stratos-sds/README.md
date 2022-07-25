@@ -1,4 +1,4 @@
-# <h1 align="center">Stratos tropos 4</h1>
+# <h1 align="center">Stratos sds</h1>
 
 ![stratos](https://user-images.githubusercontent.com/73015593/177883166-54990a2a-2b9d-4e27-9559-0aed1c36f3f8.jpg)
 
