@@ -66,7 +66,7 @@ go version
 ```
 ![go](https://user-images.githubusercontent.com/73015593/178150466-30977fc1-7b48-425d-9a5d-55aa217bda8a.png)
 
-## Go sürümü hatası alırsanız 
+## Go sürümü hatası alırsanız ! 
 ```
 snap remove go
 apt purge golang*
@@ -74,7 +74,11 @@ apt purge golang*
 snap install go --classic
 ```
 
-## Source code ile binary dosyayı derliyoruz.
+## Source code ile binary dosyayı derliyoruz. 
+(Hata alırsanız) 
+1- go mod tidy
+2- sudo apt update
+3- make build
 ```
 git clone https://github.com/stratosnet/stratos-chain.git
 cd stratos-chain
@@ -165,6 +169,10 @@ stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletNa
 ```
 ![key](https://user-images.githubusercontent.com/73015593/178202751-59ac87a6-fa9e-447a-9c15-b0eaf948559d.png)
 
+## Eski cüzdan kullanmak isteyenler için:
+```
+stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletName --recover
+```
 
 ## Faucetten token alıyoruz. walletAddress kısmına cüzdan adresimizi yazıyoruz.
 ```
@@ -184,7 +192,7 @@ stchaind query bank balances walletAddress
 --amount=1000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
---chain-id=tropos-4 \
+--chain-id=test-chain \
 --keyring-backend=test \
 --commission-rate=0.10 \
 --commission-max-rate=0.20 \ 
