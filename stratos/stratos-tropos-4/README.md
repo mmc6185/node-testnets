@@ -191,7 +191,7 @@ stchaind query bank balances walletAddress
 --amount=1000000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
---chain-id=test-chain \
+--chain-id=tropos-4 \
 --keyring-backend=test \
 --commission-rate=0.10 \
 --commission-max-rate=0.20 \ 
@@ -203,8 +203,7 @@ stchaind query bank balances walletAddress
 
 ## explorer'dan kendimizi kontrol ediyoruz. (Explorer yakında açılacak)
 https://big-dipper-tropos.thestratos.org/
-
-
+![image](https://user-images.githubusercontent.com/73015593/180935989-4db5fe4e-fb10-410d-92b3-2bc0f1370273.png)
 
 
 
