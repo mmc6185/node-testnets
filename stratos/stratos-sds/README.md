@@ -178,7 +178,7 @@ registerpeer
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180886132-985304e7-ba5b-4819-9276-c0de0803f22f.png)
 
-## activate işlemi yapıyoruz. (activate <amount> <fee> <gas>)
+## activate işlemi yapıyoruz. (activate amount fee gas)
 ```
 activate 10000000000 10000 1000000
 ```
