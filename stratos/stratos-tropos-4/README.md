@@ -200,7 +200,7 @@ stchaind tx staking create-validator \
 --gas=auto -y
 ```
 
-## explorer'dan kendimizi kontrol ediyoruz. (Explorer yakında açılacak)
+## explorer'dan kendimizi kontrol ediyoruz.
 https://big-dipper-tropos.thestratos.org/
 ![image](https://user-images.githubusercontent.com/73015593/180935989-4db5fe4e-fb10-410d-92b3-2bc0f1370273.png)
 
