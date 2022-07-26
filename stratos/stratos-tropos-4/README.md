@@ -86,11 +86,6 @@ make build
 ```
 ![make](https://user-images.githubusercontent.com/73015593/178150499-22f97f97-341e-4b66-b7fb-f9e3d2b642e2.png)
 
-## stchaind binary dosyalarını $HOME Dizinine taşıyoruz.
-```
-mv $HOME/stratos-chain/build/stchaind ./
-```
-
 ## Binary dosyalarını $GOPATH/bin dizinine yüklüyoruz.
 ```
 cd ~/stratos-chain
