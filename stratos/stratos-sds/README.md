@@ -53,11 +53,11 @@ make install
 ```
 
 ## Node dosyası oluşturup yapılandırıyoruz. 
--1 Numaralı yere şifre giriyoruz.
--2 Numaralı yere cüzdan ismimizi giriyoruz.
--3 numaralı yere input bip39 Eğer eski cüzdan kullanmak istiyorsak mnemonic giriyoruz. Yeni cüzdan oluşturmak için enter basmamız yeterli.
--4 numaralı yere enter basıyoruz.
--5 numaralı yere y giriyoruz.
+1- Numaralı yere şifre giriyoruz.
+2- Numaralı yere cüzdan ismimizi giriyoruz.
+3- numaralı yere input bip39 Eğer eski cüzdan kullanmak istiyorsak mnemonic giriyoruz. Yeni cüzdan oluşturmak için enter basmamız yeterli.
+4- numaralı yere enter basıyoruz.
+5- numaralı yere y giriyoruz.
 ```
 cd $HOME
 mkdir rsnode
