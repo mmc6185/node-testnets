@@ -189,11 +189,11 @@ status
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180886576-fdd002ee-6e73-4270-a8bb-89ee9f89bcf1.png)
 
-## Kazandığımız ödülleri kontrol etmek için (cüzdanAdresi kısmına cüzdan adresimizi yazıyoruz):
+## Kazandığımız ödülleri tarayıcıdan kontrol etmek için (cüzdanAdresi kısmına cüzdan adresimizi yazıyoruz):
 --Utros stos'un 1.000.000.000 da 1 ine eşit.
 
 https://rest-tropos.thestratos.org/pot/rewards/wallet/cüzdanAdresi
-![image](https://user-images.githubusercontent.com/73015593/180886804-860779ef-b9cb-4d16-a852-043f8c72885f.png)
+![image](https://user-images.githubusercontent.com/73015593/180897082-3142e697-2280-4f94-bf92-8b6d6f1dce34.png)
 
 # Ek komutlar 
   
