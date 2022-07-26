@@ -187,18 +187,17 @@ stchaind query bank balances walletAddress
 
 ## validator oluşturuyoruz. NodeName kısmına validator ismimizi giriyoruz. WalletAddres kısmına cüzdan adresimizi giriyoruz.
 ```
-./stchaind tx staking create-validator \
---amount=1000000000ustos \
+stchaind tx staking create-validator \
+--amount=100000000ustos \
 --pubkey=$(stchaind tendermint show-validator) \
 --moniker="NodeName" \
---chain-id=tropos-4 \
---keyring-backend=test \
+--chain-id=tropos-4  --keyring-backend=test --gas=auto -y \
 --commission-rate=0.10 \
---commission-max-rate=0.20 \ 
---commission-max-change-rate=0.01 \ 
+--commission-max-rate=0.20 \
+--commission-max-change-rate=0.01 \
 --min-self-delegation=1 \
---from=WalletAddress \ 
---gas=auto 
+--from=walletAddress \
+--gas=auto -y
 ```
 
 ## explorer'dan kendimizi kontrol ediyoruz. (Explorer yakında açılacak)
