@@ -62,6 +62,7 @@ echo 'export GOPATH=$HOME/go' >> $HOME/.bash_profile
 echo 'export GO111MODULE=on' >> $HOME/.bash_profile 
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile && . $HOME/.bash_profile 
 go version 
+go mod tidy
 ```
 ![go](https://user-images.githubusercontent.com/73015593/178150466-30977fc1-7b48-425d-9a5d-55aa217bda8a.png)
 
