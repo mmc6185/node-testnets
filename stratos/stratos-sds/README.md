@@ -191,6 +191,7 @@ status
 
 ## Kazandığımız ödülleri kontrol etmek için (cüzdanAdresi kısmına cüzdan adresimizi yazıyoruz):
 --Utros stos'un 1.000.000.000 da 1 ine eşit.
+
 https://rest-tropos.thestratos.org/pot/rewards/wallet/cüzdanAdresi
 ![image](https://user-images.githubusercontent.com/73015593/180886804-860779ef-b9cb-4d16-a852-043f8c72885f.png)
 
