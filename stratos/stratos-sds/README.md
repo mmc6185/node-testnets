@@ -140,14 +140,14 @@ curl --header "Content-Type: application/json" --request POST --data '{"denom":"
 
 ```
 
-## Screen kurulumu yapıyoruz.
+## tmux kurulumu yapıyoruz.
 ```
-apt-get install screen
+apt-get install tmux
 ```
 
-## sds isimli bir screen oluşturuyoruz.
+## sds isimli bir oturum oluşturuyoruz.
 ```
-screen -S sds
+tmux new-session -s sds
 ```
 
 ## sds resource node başlatıyoruz. (please register at first çıktısı almamız gerekiyor.)
@@ -157,7 +157,12 @@ ppd start
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180861862-5d26d766-ec76-43f1-bdfa-4a7376f7597c.png)
 
-## ctrl+a d ile screenden çıkıyoruz.
+## ctrl+b d ile çıkıyoruz.
+
+## screen aracımızı yüklüyoruz.
+```
+apt-get install screen
+```
 
 ## terminal isimli bir screen oluşturuyoruz.
 ```
