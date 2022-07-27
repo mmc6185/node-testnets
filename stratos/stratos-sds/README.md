@@ -222,6 +222,12 @@ put /root/.stafihub/test.info
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180891673-c52a20e7-9e30-4f00-b136-425c2ddab412.png)
 
+## Dosya indirmek için (SHARE_LINK kısmına dosya hash'ini yazıyoruz.PASSWORD kısmına ise eğer dosya şifreli paylaşılmışsa şifre bilgisini yazıyoruz.):
+```
+getsharefile SHARE_LINK PASSWORD
+```
+![image](https://user-images.githubusercontent.com/73015593/181343895-d5f198fb-f264-485c-ab34-fa617c34731d.png)
+
 ## Yüklenen dosyaları listelemek için:
 ![image](https://user-images.githubusercontent.com/73015593/180892343-03354dde-c8c8-4bff-9bbc-b120c586cd62.png)
   
