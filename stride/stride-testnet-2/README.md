@@ -295,12 +295,12 @@ strided tx bank send ilkCüzdan transferetmekistediğincüzdan TOKENMIKTARustrd
 
 ## Proposal'da oy vermek için (Number kısmına oy vermek istediğimiz proposal'ın numarasını, walletName kısmına cüzdan ismimizi giriyoruz):
 ```
-strided tx gov vote number yes --from walletName --chain-id=STRIDE-1
+strided tx gov vote number yes --from walletName --chain-id=STRIDE-TESTNET-2
 ```
 
 ## Token delege etmek için (validatorAddress kısmına validator adresimizi, WalletName kısmına cüzdan ismimizi yazıyoruz.):
 ```
-strided tx staking delegate validatorAddress 10000000ustrd --from=WalletName --chain-id=STRIDE-1 --gas=auto
+strided tx staking delegate validatorAddress 10000000ustrd --from=WalletName --chain-id=STRIDE-TESTNET-2 --gas=auto
 ```
 
 
