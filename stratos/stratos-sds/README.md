@@ -76,9 +76,9 @@ nano $HOME/rsnode/configs/config.toml
 [version]
   app_ver = 8
   min_app_ver = 8
-  show = 'v0.8.0'
+  show = 'v0.8.1'
 ```
-![image](https://user-images.githubusercontent.com/73015593/180858948-069ae1e0-1772-4499-bf15-87d027ebb515.png)
+![image](https://user-images.githubusercontent.com/73015593/181165289-ee639264-25fd-46e3-a54a-d320e821b133.png)
 
 ## stratos_chain_url kısmını aşağıdaki gibi değilse düzenliyoruz.
 ```
