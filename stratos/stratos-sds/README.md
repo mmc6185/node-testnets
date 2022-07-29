@@ -229,6 +229,9 @@ getsharefile SHARE_LINK PASSWORD
 ![image](https://user-images.githubusercontent.com/73015593/181343895-d5f198fb-f264-485c-ab34-fa617c34731d.png)
 
 ## Yüklenen dosyaları listelemek için:
+```
+ls
+```
 ![image](https://user-images.githubusercontent.com/73015593/180892343-03354dde-c8c8-4bff-9bbc-b120c586cd62.png)
   
 ## Yüklenen dosyayı paylaşmak için:
