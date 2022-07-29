@@ -207,7 +207,7 @@ https://rest-tropos.thestratos.org/pot/rewards/wallet/cüzdanAdresi
 Ozon, SDS tarafından kullanılan trafik birimidir. Ağ trafiğini içeren işlemler, ozonun yürütülmesini gerektirir. 
 --prepay <purchaseAmount> <feeAmount> <gasAmount>
 ```
-prepay 10000000000 10000 1000000
+prepay 500000000 10000 1000000
 ```
   
 ## Cüzdandaki ozon miktarını sorgulamak için: (walletAddress kısmına cüzdan adresini yazıyoruz.)
