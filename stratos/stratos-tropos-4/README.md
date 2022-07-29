@@ -166,7 +166,7 @@ stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletNa
 
 ## Eski cüzdan kullanmak isteyenler için:
 ```
-stchaind keys add --hd-path "m/44'/606'/0'/0/0" --keyring-backend test  WalletName --recover
+stchaind keys add WalletName --recover
 ```
 
 ## Faucetten token alıyoruz. walletAddress kısmına cüzdan adresimizi yazıyoruz.
