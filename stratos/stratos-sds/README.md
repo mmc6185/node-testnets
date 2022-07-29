@@ -286,7 +286,7 @@ wallets
 ![image](https://user-images.githubusercontent.com/73015593/180893952-b91def6b-5a4a-4115-9892-dcb07727e3a5.png)
 
  
-# (opsiyonel) Otomatik dosya oluşturup yükleme (ödül almak için gerekli değil):
+# (opsiyonel) SCRIPT Otomatik dosya oluşturup yükleme (ödül almak için gerekli değil):
 
 ## Ozon alımı yapıyoruz. (Eğer cüzdanımızda 1 token varsa)
 ```
