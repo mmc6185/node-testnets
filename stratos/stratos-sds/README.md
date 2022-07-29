@@ -216,9 +216,9 @@ getoz walletAddress
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180892216-e1a18eb4-d5f1-4cef-9044-a55bb44694f6.png)
 
-## Dosya yüklemek için:
+## Dosya yüklemek için (PATH kısmına dosyanın dizinin yapıştırırız.):
 ```
-put /root/.stafihub/test.info
+put PATH
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180891673-c52a20e7-9e30-4f00-b136-425c2ddab412.png)
 
