@@ -254,7 +254,15 @@ allshare
 ```
 delete FILE_HASH
 ```
-  
+
+## Mining:SUSPEND olunca (Bu hatanın sebebi Node'umuzun kötü performans sergilemesi.)
+Activation: Active | Mining: SUSPEND | Initial tier: 2 | Ongoing tier: 0 | Weight score: 8000
+updateStake <stakeDelta> <fee> <gas> <isIncrStake> 
+
+```
+updateStake 1000000000 10000 1000000 1
+```
+
 ## Dosya paylaşımını durdurmak için ShareId kısmına share id mizi yazıyoruz.:
 ```
 cancelshare ShareId
