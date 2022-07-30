@@ -40,7 +40,7 @@ go version
 ```
 cd $HOME
 git clone https://github.com/stratosnet/sds.git
-cd sds
+cd ~/sds
 git checkout v0.8.1
 make build
 cp target/ppd $HOME/bin
