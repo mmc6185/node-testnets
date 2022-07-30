@@ -43,14 +43,9 @@ git clone https://github.com/stratosnet/sds.git
 cd ~/sds
 git checkout v0.8.1
 make build
-cp target/ppd $HOME/bin
+cp target/ppd /root/go/bin/ppd
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180841281-fc0803b8-7b24-4d6e-b435-292c4b3eb3b9.png)
-
-## binary dosya oluşturuyoruz.
-```
-make install
-```
 
 ## Node dosyası oluşturup yapılandırıyoruz. 
 1- Numaralı yere şifre giriyoruz.
