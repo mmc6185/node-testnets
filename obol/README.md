@@ -1,6 +1,5 @@
 # <h1 align="center">Obol network</h1>
-
-![image](https://user-images.githubusercontent.com/73015593/181933143-29089e12-3a31-435f-b936-c0e08e3cc451.png)
+![obol](https://user-images.githubusercontent.com/73015593/181934677-3ec36fc7-f2c4-45d2-a3c8-2dbd7361e562.png)
 
 # Testnet başvuru
 
