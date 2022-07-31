@@ -52,7 +52,7 @@ chmod 777 charon-distributed-validator-node
 
 ## charon-distributed-validator-node dosyamızın içine giriyoruz.
 ```
-cd charon-distributed-validator-node
+cd ~/charon-distributed-validator-node
 ```
 
 
