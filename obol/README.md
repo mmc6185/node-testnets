@@ -63,8 +63,7 @@ docker run --rm -v "$(pwd):/opt/charon" obolnetwork/charon:v0.9.0 create enr
 ![image](https://user-images.githubusercontent.com/73015593/181934511-ac355d19-483f-41fe-882b-40d8288e5584.png)
 
 ## İşlemleri tamamladıktan sonra formu dolduruyoruz.
-[form linki](https://obol.typeform.com/AthenaTestnet?typeform-source=blog.obol.tech)
-
+https://obol.typeform.com/AthenaTestnet?typeform-source=blog.obol.tech
 
 
 
