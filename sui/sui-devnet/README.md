@@ -134,8 +134,8 @@ sudo systemctl enable suid
 sudo systemctl restart suid
 ```
 
-## Kurulum tamamlandıktan sonra explorerdan kendimizi kontrol ediyoruz.
-
+## Kurulum tamamlandıktan sonra [explorerdan](https://node.sui.zvalid.com/) kendimizi kontrol ediyoruz.
+![image](https://user-images.githubusercontent.com/73015593/185306232-bb0734f1-6879-442a-98de-6b7eb6602fb6.png)
 
 # Yararlı komutlar
 
