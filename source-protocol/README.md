@@ -151,6 +151,7 @@ sourced tx staking create-validator \
 
 # Explorer [linki](https://explorer.testnet.sourceprotocol.io/)
 
+
 # Yararlı komutlar
 
 ## Logları izlemek için
