@@ -17,9 +17,12 @@ rm genesis.blob
 wget -O genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
 ```
 
-## Docker tekrar başlatalım
+## Docker compose pull ediyoruz.
 ```
 docker-compose pull 
+```
+
+## Docker compose tekrar başlatıyoruz.
 docker-compose down -v 
 docker-compose up -d  
 ```
