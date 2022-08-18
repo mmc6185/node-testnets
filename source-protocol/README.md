@@ -4,9 +4,9 @@
 
 ## Sistem gereksinimleri
 ```
-8GB RAM
-200 GB SSD
-4 vCPU
+4GB RAM 
+250GB SSD  
+1.4 GHz amd64 CPU
 ```
 
 # Node kurulumu
@@ -66,6 +66,16 @@ sourced init NodeName --chain-id SOURCECHAIN-TESTNET
 curl -s  https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcechain-testnet/genesis.json > ~/.source/config/genesis.json
 ```
 
+## addrbook.json dosyasını indiriyoruz.
+```
+wget -O $HOME/.source/config/addrbook.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/source-protocol/addrbook.json"
+```
+
+## Minimum gas prices ayarlıyoruz.
+```
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00125utori\"/" $HOME/.source/config/app.toml
+```
+
 ## Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır) 
 ```
 pruning="custom"
@@ -82,6 +92,11 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 ```
 indexer="null"
 sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.source/config/config.toml
+```
+
+## Peer ekliyoruz.
+```
+sed -i.bak 's/persistent_peers =.*/persistent_peers = "6ca675f9d949d5c9afc8849adf7b39bc7fccf74f@164.92.98.17:26656"/' $HOME/.source/config/config.toml
 ```
 
 ## Servis dosyası oluşturup node'umuzu başlatıyoruz
@@ -109,8 +124,61 @@ sudo systemctl enable sourced
 sudo systemctl restart sourced
 ```
 
+## Cüzdan oluşturuyoruz.walletName kısmına kendi cüzdan ismimizi yazıyoruz.
+```
+sourced keys add walletName
+```
+![image](https://user-images.githubusercontent.com/73015593/185483573-fd3394fc-22c7-40dd-b478-da26ad9ac420.png)
 
+## [Source protocol discord](https://discord.gg/Qv2KM2hu)'una gidiyoruz. #faucet kanalından token talep ediyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/185483005-84c8f28f-c154-486c-8388-668e3f89550e.png)
 
+## Validator oluşturuyoruz. (NodeName kısmına validator ismimizi yazıyoruz.WalletName kısmına cüzdan ismimizi yazıyoruz.)
+```
+sourced tx staking create-validator \
+--amount 1000000000usource \
+--commission-max-change-rate "0.1" \
+--commission-max-rate "0.20" \
+--commission-rate "0.1" \
+--min-self-delegation "1" \
+--details "validators write bios too" \
+--pubkey=$(sourced tendermint show-validator) \
+--moniker "NodeName" \
+--chain-id sourcechain-testnet \
+--gas-prices 0.025usource \
+--from WalletName
+```
+
+# Yararlı komutlar
+
+## Logları izlemek için
+```
+journalctl -fu sourced -o cat
+```
+## Servis başlatmak için
+```
+systemctl start sourced
+```
+## Servis durdurmak için
+```
+systemctl stop sourced
+```
+## Servis tekrar başlatmak için
+```
+systemctl restart sourced
+```
+## Sync durumuna bakmak için
+```
+sourced status 2>&1 | jq .SyncInfo
+```
+## Cüzdandaki token miktarını sorgulama komutu
+```
+sourced query bank balances walletAddress
+```
+## Cüzdandaki token miktarı sorgulama komutu
+```
+sourced query bank balances walletname
+```
 
 
 
