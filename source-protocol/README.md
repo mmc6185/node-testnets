@@ -149,6 +149,8 @@ sourced tx staking create-validator \
 --from WalletName
 ```
 
+# Explorer [linki](https://explorer.testnet.sourceprotocol.io/)
+
 # Yararlı komutlar
 
 ## Logları izlemek için
