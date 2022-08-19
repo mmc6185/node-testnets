@@ -71,6 +71,11 @@ curl -s  https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/maste
 wget -O $HOME/.source/config/addrbook.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/source-protocol/addrbook.json"
 ```
 
+## seed ekliyoruz
+SEEDS="6ca675f9d949d5c9afc8849adf7b39bc7fccf74f@164.92.98.17:26656"
+PEERS=""
+sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.source/config/config.toml
+
 ## Minimum gas prices ayarlıyoruz.
 ```
 sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00125utori\"/" $HOME/.source/config/app.toml
