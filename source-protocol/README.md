@@ -72,9 +72,11 @@ wget -O $HOME/.source/config/addrbook.json "https://raw.githubusercontent.com/mm
 ```
 
 ## seed ekliyoruz
+```
 SEEDS="6ca675f9d949d5c9afc8849adf7b39bc7fccf74f@164.92.98.17:26656"
 PEERS=""
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.source/config/config.toml
+```
 
 ## Minimum gas prices ayarlıyoruz.
 ```
