@@ -80,7 +80,7 @@ sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persisten
 
 ## Minimum gas prices ayarlıyoruz.
 ```
-sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00125utori\"/" $HOME/.source/config/app.toml
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00125usource\"/" $HOME/.source/config/app.toml
 ```
 
 ## Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır) 
