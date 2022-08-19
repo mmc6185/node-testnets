@@ -142,18 +142,19 @@ sourced keys add walletName
 
 ## Validator oluşturuyoruz. (NodeName kısmına validator ismimizi yazıyoruz.WalletName kısmına cüzdan ismimizi yazıyoruz.)
 ```
+
 sourced tx staking create-validator \
---amount 1000000000usource \
---commission-max-change-rate "0.1" \
---commission-max-rate "0.20" \
---commission-rate "0.1" \
---min-self-delegation "1" \
---details "validators write bios too" \
+--amount=950000usource \
 --pubkey=$(sourced tendermint show-validator) \
---moniker "NodeName" \
---chain-id sourcechain-testnet \
---gas-prices 0.025usource \
---from WalletName
+--moniker=forgottensemicolon \
+--chain-id=sourcechain-testnet \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.1" \
+--min-self-delegation="1" \
+--from=forgottensemicolon \
+--fees=5000usource \
+-y
 ```
 
 # Explorer [linki](https://explorer.testnet.sourceprotocol.io/)
