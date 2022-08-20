@@ -138,20 +138,28 @@ docker-compose up -d
 
 ## 2- Aptos lab github'ından petra wallet indiriyoruz. [LINK](https://github.com/aptos-labs/aptos-core/releases/download/wallet-v0.1.6/wallet-extension.zip)
 
-## 3- Connect wallet kısmı için wallet eklememiz gerekiyor.
+## 3- İndirdiğimiz zipli klasörü winrar gibi bir unzip aracı ile çıkartıyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/185758793-4347bfd8-587f-41e2-897c-e32daf5b99f8.png)
+
+## 4- Connect wallet kısmı için wallet eklememiz gerekiyor.
 ![image](https://user-images.githubusercontent.com/73015593/185757229-7d458615-2666-4a3d-81e9-953c7fd1e694.png)
 
-## 4- (Chrome extensions)[chrome://extensions/] adresine gidiyoruz.
+## 5- (Chrome extensions)[chrome://extensions/] adresine gidiyoruz.
 
-## 5- Sağ üstten geliştirici modunu açıyoruz.
+## 6- Sağ üstten geliştirici modunu açıyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/185757293-4e716003-bfd6-4a85-8945-25aa3d830873.png)
 
-## 6- Sol üstten paketlenmemiş öğe yükle seçiyoruz.
+## 7- Sol üstten paketlenmemiş öğe yükle seçiyoruz. ve zipten çıkardığımız cüzdan klasörünü yüklüyoruz.(varsayılan klasör ismi build)
 ![image](https://user-images.githubusercontent.com/73015593/185757360-2a15e493-bbe1-45f4-a001-a9cc1357e422.png)
 
+## 8- Petra Aptos wallet eklentilerde gözüküyor. Ardından cüzdan oluşturuyoruz. [aptoslabs](https://aptoslabs.com/it3) sitesine giderek cüzdanımızı bağlıyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/185758968-1553f391-6703-4be2-b63a-00b48af88de7.png)
 
-
-
+## 9- NODE REGISTRATION kısmında gireceğimiz bilgileri öğreniyoruz. (NodeName kısmına kendi klasör ismimizi giriyoruz. API PORT Kısmına 80 yazıyoruz.)
+```
+cat $HOME/aptoss/NodeName/operator.yaml
+```
+<img width="679" alt="walet" src="https://user-images.githubusercontent.com/73015593/185760465-ef7f2257-2164-41de-a427-e8729caf9e54.png">
 
 
 
