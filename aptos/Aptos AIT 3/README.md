@@ -3,11 +3,11 @@
 ![aptos](https://user-images.githubusercontent.com/73015593/177651583-9bfbdf15-79ee-447e-8442-5230a47fefff.jpg)
 
 # Testnet detayları
-Aptos AIT 3 testnetine dünya genelinden 225 kişi seçilecek.Her bir katılımcı en az 500 aptos token kazanacak. Daha iyi performans gösteren bazı katılımcılar ek 200 aptos token daha kazanacak.
+Aptos AIT 3 testnetine dünya genelinden 225 kişi seçilecek.Her bir katılımcı en az 800 aptos token kazanacak. Daha iyi performans gösteren bazı katılımcılar ek 200 aptos token daha kazanacak.
 
 [Daha fazla detay için medium makalesi]
 
-https://medium.com/aptoslabs/welcome-to-aptos-incentivized-testnet-2-af26e2fd69a7
+[https://medium.com/aptoslabs/welcome-to-aptos-incentivized-testnet-2-af26e2fd69a7](https://aptoslabs.medium.com/welcome-to-aptos-incentivized-testnet-3-9d7ce888205c)
 
 # Sistem gereksinimleri
 ```
