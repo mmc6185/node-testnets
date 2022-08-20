@@ -160,7 +160,17 @@ cat $HOME/aptoss/NodeName/operator.yaml
 ```
 <img width="679" alt="walet" src="https://user-images.githubusercontent.com/73015593/185760465-ef7f2257-2164-41de-a427-e8729caf9e54.png">
 
+# Ek komutlar
 
+## 1- Loglara bakmak için
+```
+docker logs -f aptos-fullnode --tail 50
+```
+
+## 2- Node sync durumuna bakmak için
+```
+curl 127.0.0.1:9101/metrics 2> /dev/null | grep aptos_state_sync_version | grep type
+```
 
 
 
