@@ -5,9 +5,8 @@
 # Testnet detayları
 Aptos AIT 3 testnetine dünya genelinden 225 kişi seçilecek.Her bir katılımcı 800 aptos token kazanacak. Daha iyi performans gösteren bazı katılımcılar ek 200 aptos token daha kazanacak.
 
-[Daha fazla detay için medium makalesi]
+[Daha fazla detay için medium makalesi](https://aptoslabs.medium.com/welcome-to-aptos-incentivized-testnet-3-9d7ce888205c)
 
-[https://medium.com/aptoslabs/welcome-to-aptos-incentivized-testnet-2-af26e2fd69a7](https://aptoslabs.medium.com/welcome-to-aptos-incentivized-testnet-3-9d7ce888205c)
 
 # Sistem gereksinimleri
 ```
