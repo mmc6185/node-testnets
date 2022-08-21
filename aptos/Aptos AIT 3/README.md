@@ -87,7 +87,7 @@ cd ~/aptoss
 aptos genesis set-validator-configuration \
     --local-repository-dir ~/aptoss \
     --username NodeName \
-    --owner-public-identity-file ~/$WORKSPACE/keys/public-keys.yaml \
+    --owner-public-identity-file ~/aptoss/keys/public-keys.yaml \
     --validator-host $IPADDR:6180 \
     --stake-amount 100000000000000
 ```
