@@ -9,6 +9,12 @@
 1.4 GHz amd64 CPU
 ```
 
+# Linkler 
+# Linkler
+> ## [Discord](https://discord.gg/Qv2KM2hu)<br>
+> ## [Source protocol website](https://www.sourceprotocol.io/)
+
+
 # Node kurulumu
 
 ## root yetkisi kazanıyoruz.
@@ -63,7 +69,7 @@ sourced init NodeName --chain-id SOURCECHAIN-TESTNET
 
 ## genesis.json dosyasını indiriyoruz.
 ```
-curl -s  https://raw.githubusercontent.com/Source-Protocol-Cosmos/testnets/master/sourcechain-testnet/genesis.json > ~/.source/config/genesis.json
+wget -O $HOME/.source/config/genesis.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/source-protocol/genesis.json"
 ```
 
 ## addrbook.json dosyasını indiriyoruz.
@@ -158,8 +164,9 @@ sourced tx staking create-validator \
 ```
 
 # Explorer [linki](https://explorer.testnet.sourceprotocol.io/)
+![image](https://user-images.githubusercontent.com/73015593/185793407-01ce742c-7472-4ed7-8be2-79a142299e49.png)
 
-# Eşleşme sorunu yaşayanlar için [snapshot](https://github.com/obajay/StateSync-snapshots/blob/main/Source/README.md)
+# Eşleşme sorunu yaşayanlar için SAKURA#0129 hazırladığı [snapshot](https://github.com/obajay/StateSync-snapshots/blob/main/Source/README.md)
 
 # Yararlı komutlar
 
