@@ -226,9 +226,9 @@ strided keys add walletname --recover
 ```
 ![recover](https://user-images.githubusercontent.com/73015593/180307244-68ddb9ed-3bad-4991-9d90-0e1785039267.PNG)
 
-## Sync durumunu kontrol etmek için (16657 kısmına port numaranızı yazın):
+## Sync durumunu kontrol etmek için (PORTNUMBER kısmına port numaranızı yazın):
 ```
-curl -s localhost:16657/status | jq .result.sync_info
+curl -s localhost:PORTNUMBER/status | jq .result.sync_info
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180308561-79eda576-af12-45df-9139-7b0fa3999819.png)
 
