@@ -134,7 +134,7 @@ docker-compose up -d
 ![image](https://user-images.githubusercontent.com/73015593/185756564-77fc1420-da9a-4f23-9de6-c384737a2d75.png)
 
 # Testnet registration
-## 1- Tüm işlemler doğruysa (aptoslabs)[https://aptoslabs.com/community] sitesine giderek GET STARTED diyoruz.
+## 1- Tüm işlemler doğruysa [aptoslabs](https://aptoslabs.com/community) sitesine giderek GET STARTED diyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/185756923-95c0e568-8d17-4491-9b08-15831da44151.png)
 
 ## 2- Aptos lab github'ından petra wallet indiriyoruz. [LINK](https://github.com/aptos-labs/aptos-core/releases/download/wallet-v0.1.6/wallet-extension.zip)
