@@ -159,6 +159,7 @@ sourced tx staking create-validator \
 
 # Explorer [linki](https://explorer.testnet.sourceprotocol.io/)
 
+# Eşleşme sorunu yaşayanlar için [snapshot](https://github.com/obajay/StateSync-snapshots/blob/main/Source/README.md)
 
 # Yararlı komutlar
 
