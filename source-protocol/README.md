@@ -9,11 +9,9 @@
 1.4 GHz amd64 CPU
 ```
 
-# Linkler 
 # Linkler
 > ## [Discord](https://discord.gg/Qv2KM2hu)<br>
 > ## [Source protocol website](https://www.sourceprotocol.io/)
-
 
 # Node kurulumu
 
