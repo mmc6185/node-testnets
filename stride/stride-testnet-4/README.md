@@ -1,7 +1,7 @@
 # <h1 align="center">Stride Testnet 4</h1>
 
 <p align="center">
-<img width="800" height="400"  alt="stride" src="https://user-images.githubusercontent.com/73015593/185779826-55d948dd-8785-442d-8d73-899b7d21276a.png">
+<img width="1000" height="450"  alt="stride" src="https://user-images.githubusercontent.com/73015593/185779826-55d948dd-8785-442d-8d73-899b7d21276a.png">
 </p>
 
 ## Minimum Sistem gereksinimleri
