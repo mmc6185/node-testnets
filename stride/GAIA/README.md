@@ -68,7 +68,121 @@ gaiad init NodeName --chain-id GAIA
 ```
 
 ## genesis.json ve addrbook.json dosyalarını indiriyoruz.
+```
+wget -qO $HOME/.gaia/config/genesis.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/stride/GAIA/genesis.json"
+wget -qO $HOME/.gaia/config/addrbook.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/stride/GAIA/addrbook.json"
+```
 
+## (opsiyonel) Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır)
+```
+pruning="custom"
+pruning_keep_recent="100"
+pruning_keep_every="0"
+pruning_interval="50"
+sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.gaia/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.gaia/config/app.toml
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.gaia/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.gaia/config/app.toml
+```
+
+## Mininumum gas price ayarlıyoruz.
+```
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0uatom\"/" $HOME/.gaia/config/app.toml
+```
+
+## Servis dosyası oluşturuyoruz ve servisimizi başlatıyoruz.
+```
+sudo tee /etc/systemd/system/gaiad.service > /dev/null <<EOF
+[Unit]
+Description=gaia
+After=network-online.target
+[Service]
+User=$USER
+ExecStart=$(which gaiad) start --home $HOME/.gaia
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable gaiad
+sudo systemctl restart gaiad
+```
+
+## Cüzdan oluşturuyoruz. WalletName kısmına kendi cüzdan adımızı yazıyoruz.
+```
+gaiad keys add WalletName
+```
+
+## sync işlemi tamamlandıktan sonra validator oluşturuyoruz.NodeName kısmına validator ismimizi giriyoruz. WalletName kısmına cüzdan adresimizi yazıyoruz.
+```
+gaiad tx staking create-validator \
+  --moniker NodeName \
+  --amount 1000000uatom \
+  --pubkey $(gaiad tendermint show-validator) \ 
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.07" \
+  --min-self-delegation "1" \
+  --chain-id GAIA \
+  --from WalletName \
+```  
+
+## Cüzdan oluşturduktan sonra [Stride discord](https://discord.gg/m62exje6) kanalına giderek #token-faucet kanalından aşağıdaki gibi token talep ediyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/185785973-dbad5b92-9952-47aa-80d6-31f8c67b89cd.png)
+
+# Yararlı komutlar
+## mnemonic ile Cüzdan recover etmek için (walletname kısmına cüzdan ismimizi yazıyoruz.):
+```
+gaiad keys add walletname --recover
+```
+
+## Sync durumunu kontrol etmek için (PORTNUMBER kısmına port numaranızı yazın):
+```
+curl -s localhost:PORTNUMBER/status | jq .result.sync_info
+```
+
+## Servis başlatmak için:
+```
+sudo systemctl start gaiad
+```
+
+## Servis durdurmak için:
+```
+sudo systemctl stop gaiad
+```
+
+## Servis tekrardan başlatmak için:
+```
+sudo systemctl restart gaiad
+```
+
+## Node id öğrenmek için:
+```
+gaiad tendermint show-node-id
+```
+
+## Cüzdandaki token miktarını sorgulamak için (WalletAddress kısmına cüzdan adresinizi yazın):
+```
+gaiad query bank balances WalletAddress
+```
+
+## Token transfer etmek için (TOKENMIKTAR kısmına transfer etmek istediğimiz token miktarını giriyoruz):
+```
+gaiad tx bank send ilkCüzdan transferetmekistediğincüzdan TOKENMIKTARuatom
+```
+
+## Proposal'da oy vermek için (Number kısmına oy vermek istediğimiz proposal'ın numarasını, walletName kısmına cüzdan ismimizi giriyoruz):
+```
+strided tx gov vote number yes --from walletName --chain-id=GAIA
+```
+
+## Token delege etmek için (validatorAddress kısmına validator adresimizi, WalletName kısmına cüzdan ismimizi yazıyoruz.):
+```
+strided tx staking delegate validatorAddress 10000000ustrd --from=WalletName --chain-id=GAIA --gas=auto
+```
 
 
 
