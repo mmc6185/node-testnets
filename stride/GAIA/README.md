@@ -3,12 +3,16 @@
 <img width="300" height="200"  alt="stride" src="https://user-images.githubusercontent.com/73015593/185782593-a32e1014-4c8f-4880-9996-2a4e11712e77.svg">  
 
 
-## Minimum Sistem gereksinimleri
+# Minimum Sistem gereksinimleri
 ```
 8GB RAM
 200 GB SSD
 4 vCPU
 ```
+
+# Linkler
+> ## [Discord](https://discord.gg/m62exje6)<br>
+> ## [Stride website](https://stride.zone/)
 
 # Node kurulumu
 
@@ -116,6 +120,9 @@ sudo systemctl restart gaiad
 gaiad keys add WalletName
 ```
 
+## Cüzdan oluşturduktan sonra [Stride discord](https://discord.gg/m62exje6) kanalına giderek #token-faucet kanalından aşağıdaki gibi token talep ediyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/185785973-dbad5b92-9952-47aa-80d6-31f8c67b89cd.png)
+
 ## sync işlemi tamamlandıktan sonra validator oluşturuyoruz.NodeName kısmına validator ismimizi giriyoruz. WalletName kısmına cüzdan adresimizi yazıyoruz.
 ```
 gaiad tx staking create-validator \
@@ -130,8 +137,8 @@ gaiad tx staking create-validator \
   --from WalletName \
 ```  
 
-## Cüzdan oluşturduktan sonra [Stride discord](https://discord.gg/m62exje6) kanalına giderek #token-faucet kanalından aşağıdaki gibi token talep ediyoruz. 
-![image](https://user-images.githubusercontent.com/73015593/185785973-dbad5b92-9952-47aa-80d6-31f8c67b89cd.png)
+## [Explorer](https://poolparty.stride.zone/GAIA/staking) giderek kendimizi kontrol ediyoruz.
+![image](https://user-images.githubusercontent.com/73015593/185787079-d0cff98b-534f-4111-8665-3d24883933ba.png)
 
 # Yararlı komutlar
 ## mnemonic ile Cüzdan recover etmek için (walletname kısmına cüzdan ismimizi yazıyoruz.):
