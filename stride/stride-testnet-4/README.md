@@ -83,7 +83,7 @@ strided keys add key-name
 ## Genesis dosyasını indiriyoruz.
 ```
 cd $HOME/.stride/config
-wget -O genesis.json "https://raw.githubusercontent.com/Stride-Labs/testnet/main/poolparty/genesis.json"
+wget -O genesis.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/stride/stride-testnet-4/genesis.json"
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180229869-3521bbba-b2a9-4d80-a32c-02c5a2f71ea5.png)
 
@@ -128,7 +128,7 @@ sed -i 's/max_num_outbound_peers =.*/max_num_outbound_peers = 100/g' $HOME/.stri
 
 ## Addrbook.json dosyasını indiriyoruz.
 ```
-wget -O $HOME/.stride/config/addrbook.json "https://github.com/mmc6185/node-testnets/blob/main/stride/addrbook.json?raw=true"
+wget -O $HOME/.stride/config/addrbook.json "https://raw.githubusercontent.com/mmc6185/node-testnets/main/stride/stride-testnet-4/addrbook.json"
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180236623-57e5bbf8-1041-46b7-a4b6-0ec1e29e76bc.png)
 
@@ -190,7 +190,7 @@ strided tx staking create-validator \
 --amount=9800000ustrd \
 --pubkey=$(strided tendermint show-validator) \
 --moniker=ValidatorName \
---chain-id=STRIDE-TESTNET-2 \
+--chain-id=STRIDE-TESTNET-4 \
 --commission-rate="0.10" \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.1" \
