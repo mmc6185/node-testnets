@@ -6,7 +6,7 @@
 ```
 4GB RAM
 50GB+ disk
-2 vcpu
+4 vcpu
 ```
 
 # Node kurulumu
