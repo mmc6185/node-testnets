@@ -17,7 +17,20 @@
 İşlemlere geçmeden önce cüzdanınızda bakiye olduğundan emin olun çünkü tokeniniz olmadan bu işlemleri yapamazsınız.
 ```
 
+Bu Görevi Yapabilmek İçin İndexer Açık Olmalıdır. Kapalıysa Şu komutla Açalım
+> Stride
+```
+sed -i -e "s/^indexer *=.*/indexer = \"kv\"/" $HOME/.stride/config/config.toml
+```
+
+**Gaia İçin de Açıyoruz**
+> Gaia
+```
+sed -i -e "s/^indexer *=.*/indexer = \"kv\"/" $HOME/.gaia/config/config.toml
+```
+
 > Öncelikle RPC bilgilerimizi öğreneceğiz.
+> RPC laddr yazan kısımdadır.
 ```
 Stride için ---> nano $HOME/.stride/config/config.toml
 ```
@@ -28,13 +41,13 @@ Gaia için ---> nano $HOME/.gaia/config/config.toml
 ```
 ![g2](https://user-images.githubusercontent.com/107190154/185766607-de776257-46c9-455a-998d-613843948c34.png)
 
-> Not: laddr: "tcp://0.0.0.0:16657" bu kısmı kopyalıyoruz.
+> Not: laddr: "tcp://0.0.0.0:16657" bu kısmı kopyalıyoruz. Kendi sunucumuzun ip'sini yazmıyoruz. Laddr kısmında yazan neyse onu yazıyoruz.
 
 > Tekrar ifade ediyorum; bu işlemleri tokensiz yapamazsınız, cüzdanınızda tokeniniz mutlaka olmalıdır.
 
 ## Değişkenlerin Ayarlamasını Yapalım
 ```
-RELAYER_ID='discord#1234'            # Discord id'nizi yazabilirsiniz. (Şart Değil)
+RELAYER_ID='discord#1234'            # Discord id'nizi yazabilirsiniz.
 STRIDE_RPC_ADDR='127.0.0.1:16657'    # Az önce kopyaladığımız Stride RPC yazın
 GAIA_RPC_ADDR='127.0.0.1:23657'      # Az önce kopyaladığımız Gaia RPC yazın
 ```
@@ -70,7 +83,9 @@ sudo mkdir $HOME/.relayer/paths
 ```
 
 ## Stride için Json DosyasI Oluşturalım.
-> Direkt yapıştırın. Değişiklik yapmanıza gerek yok.
+> Key ksımına cüzdan isminizi yazabilirsiniz.
+
+> Wallet olarak da kalabilir.
 ```
 sudo tee $HOME/.relayer/chains/stride.json > /dev/null <<EOF
 {
@@ -93,7 +108,9 @@ sudo tee $HOME/.relayer/chains/stride.json > /dev/null <<EOF
 EOF
 ```
 ## Gaia için Json DosyasI Oluşturalım.
-> Direkt yapıştırın. Değişiklik yapmanıza gerek yok.
+> Key ksımına cüzdan isminizi yazabilirsiniz.
+
+> Wallet olarak da kalabilir.
 ```
 sudo tee $HOME/.relayer/chains/gaia.json > /dev/null <<EOF
 {
@@ -130,10 +147,10 @@ rly chains list
 2: STRIDE-TESTNET-4 -> type(cosmos) key(✘) bal(✘) path(✘)
 ```
 ## Cüzdanları Aktarıcıya Yükleyelim.
-> Stride cüzdanımızın kelimelerini kullanalım, her ikisi için de.
+> Cüzdan Adımızı ve Kelimelerimizi Girelim.
 ```
-rly keys restore stride wallet "cüzdankelimeleriniziyazın"
-rly keys restore gaia wallet "cüzdankelimeleriniziyazın"
+rly keys restore stride cüzdanismi "cüzdankelimeleriniziyazın"
+rly keys restore gaia cüzdanismi "cüzdankelimeleriniziyazın"
 ```
 ## Stride-Gaia Paths Json Dosyasını Oluşturalım
 > Direkt yapıştırın. Değişiklik yapmanıza gerek yok.
