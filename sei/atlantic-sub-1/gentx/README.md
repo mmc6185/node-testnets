@@ -1,6 +1,8 @@
 # <h1 align="center">Sei atlantic sub-1 create GENTX</h1>
 
-
+# Grup 1 Olanlar atlantic-1 ağından devam ediyor.Grup 2-3 olanlar atlantic-sub-1 kurulumu yapıyor. Grup 4-5 olanlar atlantic-sub-2 kurulumu yapıyor.
+* ## [GRUP LİSTESİ](https://docs.google.com/spreadsheets/d/1TEkE3EG_s8JGuFMKveyN89Pe8oB48rvsOGgmPlbNv3Q/edit#gid=959632928)
+![image](https://user-images.githubusercontent.com/73015593/186838186-bda50b57-ed93-4b83-a7f3-ccd00e763497.png)
 
 # Gentx oluşturma
 
