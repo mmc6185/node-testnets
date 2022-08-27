@@ -77,7 +77,7 @@ seid add-genesis-account WalletName 10000000usei
 ## [Sei testnet github](https://github.com/sei-protocol/testnet) adresine giderek forkluyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/186822403-b7b24c47-5d9f-48e6-ad53-a72033b85645.png)
 
-## Forkladığımız repository'de "testnet/tree/main/atlantic-subchains/atlantic-sub-1/gentx" adresine gidiyoruz.
+## Forkladığımız repository'de "testnet/tree/main/atlantic-subchains/atlantic-sub-2/gentx" adresine gidiyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/186823066-8cc211d5-e6c4-4ae8-83b8-e63097d130d2.png)
 
 ## Add file ardından Upload files seçerek gentx dosyamızı "gentx-YOUR_VALIDATOR_NAME.json" şeklinde yüklüyoruz.(YOUR_VALIDATOR_NAME kısmına kendi validator isminiz yazıyorsunuz.)
