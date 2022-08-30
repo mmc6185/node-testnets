@@ -67,7 +67,7 @@ seid keys add WalletName --recover
 
 ## Genesis dosyasını indiriyoruz:
 ```
-wget -O $HOME/.sei/config/genesis.json "https://github.com/sei-protocol/testnet/blob/main/atlantic-subchains/atlantic-sub-2/genesis.json"
+wget -O $HOME/.sei/config/genesis.json ""https://raw.githubusercontent.com/sei-protocol/testnet/main/atlantic-subchains/atlantic-sub-2/genesis.json"
 ```
 
 ## Pruning açıyoruz. (Disk kullanımını düşürür - cpu ve ram kullanımını arttırır) 
