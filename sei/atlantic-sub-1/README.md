@@ -142,18 +142,6 @@ seid tx staking create-validator \
 --yes
 ```
 
-## validator oluştuktan sonra böyle bir çıktı gelir.
-![txhash](https://user-images.githubusercontent.com/73015593/177646080-e461110d-bbfa-4895-9ba9-7dcd81ce3d15.PNG)
-
-## Validator oluşturup oluşturulmadığını explorerda txhash aratarak kontrol edebiliriz
-https://testnet-explorer.stafihub.io/stafi-hub-testnet/staking
-![suc](https://user-images.githubusercontent.com/73015593/177646264-e75d1681-e4e7-4493-a6c2-b6fa87f03459.PNG)
-
-## Ayrıca explorerdan kendi ismimizi kontrol edebiliriz
-https://testnet-explorer.stafihub.io/stafi-hub-testnet/staking
-![explorer](https://user-images.githubusercontent.com/73015593/177646631-9a9cbac0-22ee-46ea-90a8-53702f10802f.PNG)
-
-
 # Yararlı komutlar
 
 ## Logları izlemek için
