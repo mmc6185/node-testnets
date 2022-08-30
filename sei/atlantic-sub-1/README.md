@@ -124,6 +124,7 @@ seid keys add walletName
 ```
 
 ## Sync tamamlandıktan sonra validator oluşturabilmek için [Form](https://docs.google.com/spreadsheets/d/15reUshGJ4P3oS9kesCg9jO2M1zTsUE34TC8X11Sp2mA/edit#gid=0)'a gidiyoruz.Validator adresimizi ve cüzdan adresimizi giriyoruz.
+![image](https://user-images.githubusercontent.com/73015593/187340619-0a5f720e-94a9-41d5-84df-22ee07cd2416.png)
 
 ## Validator oluşturuyoruz. NodeName kısmına kendi node ismimizi.WalletName kısmına ise cüzdan ismimizi giriyoruz 
 ```
