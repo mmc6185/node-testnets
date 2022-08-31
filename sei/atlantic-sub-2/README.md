@@ -5,7 +5,7 @@
 # Linkler
 > ## [Discord](https://discord.gg/3E4MGvvr)<br>
 > ## [Sei network website](https://www.seinetwork.io/)
-> ## [atlantic-sub-2 explorer]()
+> ## [atlantic-sub-2 explorer](https://testnet-explorer.brocha.in/sei%20atlantic-sub-2)
 
 ## Sistem gereksinimleri
 ```
