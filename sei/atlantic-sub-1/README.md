@@ -2,6 +2,12 @@
 
 ![sei](https://user-images.githubusercontent.com/73015593/187335052-f2e42262-705a-4381-b90f-502d8d007f4e.png)
 
+
+# Linkler
+> ## [Discord](https://discord.gg/3E4MGvvr)<br>
+> ## [Sei network website](https://www.seinetwork.io/)
+> ## [atlantic-sub-1 explorer](https://testnet-explorer.brocha.in/sei%20atlantic-sub-1)
+
 ## Sistem gereksinimleri
 ```
 32GB RAM
