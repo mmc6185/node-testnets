@@ -2,6 +2,11 @@
 
 ![bundlr](https://user-images.githubusercontent.com/73015593/180402615-3b816a9e-1978-4e0b-8b16-ae172fc715ab.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/gD2qAZxy)<br>
+> ## [Bundlr website](https://bundlr.network/)
+> ## [Bundlr explorer](https://node.aptos.zvalid.com/)
+
 # Sistem gereksinimleri
 ```
 8GB RAM
@@ -142,8 +147,7 @@ npm i -g @bundlr-network/testnet-cli
 source $HOME/.profile
 ```
 
-## Faucet sitesine gidiyoruz.Görseldeki gibi cüzdan adresimizi giriyoruz.
-https://bundlr.network/faucet
+## [Faucet](https://bundlr.network/faucet) sitesine gidiyoruz.Görseldeki gibi cüzdan adresimizi giriyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/180610746-ce33da60-7a47-4830-bfd0-d06d38779b95.png)
 
 ## Twitter'da token isteğimizi paylaştıktan sonra url'i yapıştırıyoruz. ve aşağıdaki gibi bir çıktı alıyoruz.
@@ -161,8 +165,8 @@ testnet-cli join RkinCLBlY4L5GZFv8gCFcrygTyd5Xm91CzKlR6qxhKA -w ~/validator-rust
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180611584-764b2363-0e76-4a49-a4ef-0cb2a35de5a1.png)
 
-## Explorer'da kendimizi kontrol ediyoruz.
-https://bundlr.network/explorer/
+## [Explorer](https://bundlr.network/explorer/)'da kendimizi kontrol ediyoruz.
+
 
 ## Loglara bakmak için: 
 ```
