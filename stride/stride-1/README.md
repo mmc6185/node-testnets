@@ -2,14 +2,17 @@
 
 ![stride](https://user-images.githubusercontent.com/73015593/180210525-c011f584-ccd8-464f-8bc3-48b97dade2b4.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/ZWuBuhZf)<br>
+> ## [Stride website](https://stride.zone/)
+> ## [Stride explorer](https://stride.explorers.guru/)
 
-## Minimum Sistem gereksinimleri (Genel cosmos sistem gereksinimi)
+# Minimum Sistem gereksinimleri (Genel cosmos sistem gereksinimi)
 ```
 8GB RAM
 200 GB SSD
 4 vCPU
 ```
-
 
 # Node kurulumu
 
@@ -202,13 +205,13 @@ strided tx staking create-validator \
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180307376-f5e45e30-b3cf-4d38-a950-86d18e9cf18a.png)
 
-## Validator oluşturduktan sonra çıkan txhash'i explorerda aratıyoruz. (Success çıktısı almamız gerekli)
-https://stride.explorers.guru/validators
+## Validator oluşturduktan sonra çıkan txhash'i [explorer](https://stride.explorers.guru/validators)'da aratıyoruz. (Success çıktısı almamız gerekli)
+
 ![image](https://user-images.githubusercontent.com/73015593/180307631-34dac205-33d2-4b07-8ef2-fb83ac61f864.png)
 
 
-## Explorer'dan validatorümüzü kontrol ediyoruz.
-https://stride.explorers.guru/validators
+## [Explorer](https://stride.explorers.guru/validators)'dan validatorümüzü kontrol ediyoruz.
+
 ![image](https://user-images.githubusercontent.com/73015593/180308024-c08a6019-f44a-43b5-b87e-c138e58ead96.png)
 
 
