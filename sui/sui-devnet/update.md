@@ -1,4 +1,4 @@
-# <h1 align="center">Sui devnet (full node) update</h1>
+# <h1 align="center">Sui Devnet (full node) update</h1>
 
 ![sui](https://user-images.githubusercontent.com/73015593/178133251-a0ed4307-3cc5-4aab-b929-280afc1788d2.jpg)
 
