@@ -2,6 +2,10 @@
 
 ![minima](https://user-images.githubusercontent.com/73015593/178371122-781308f3-35c7-448c-b62c-e26574dcd04b.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/GyDYpVZS)<br>
+> ## [Minima website](https://www.minima.global/)
+> ## [Minima explorer](https://incentive.minima.global/)
 
 # Node kurulumu
 
@@ -34,5 +38,5 @@ curl 127.0.0.1:9002/incentivecash+uid:INCENTIVE-ID
 ![id](https://user-images.githubusercontent.com/73015593/178372682-2bd6eb63-cbea-492c-a7b9-e9fd0fbff7bd.jpg)
 
 
-## Günlük ping atarak https://incentive.minima.global/ sitesinden kazandığımız ödülleri görebiliriz.
+## Günlük ping atarak [minima.global](https://incentive.minima.global/) sitesinden kazandığımız ödülleri görebiliriz.
 ![reward](https://user-images.githubusercontent.com/73015593/178372486-c1825e50-5045-4f3e-8a91-f24820aa0ecf.PNG)
