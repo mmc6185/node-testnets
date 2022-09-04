@@ -2,7 +2,12 @@
 
 ![massa](https://user-images.githubusercontent.com/73015593/180018941-20b9e515-6e94-47ef-b928-b8e3ba507691.jpg)
 
-## Sistem gereksinimleri
+# Linkler
+> ## [Discord](https://discord.gg/J7scURTM)<br>
+> ## [Massa website](https://massa.net/)
+> ## [Massa explorer](https://paranormal-brothers.com/massa/)
+
+# Sistem gereksinimleri
 ```
 8GB RAM
 100 GB SSD
@@ -64,6 +69,12 @@ git clone --branch testnet https://github.com/massalabs/massa.git
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180027098-8b7a2a69-f3f4-4bd1-9c61-3cbdf0836bdf.png)
 
+## Portlarımızı açıyoruz.
+```
+sudo ufw enable
+sudo ufw allow 31244,31245,22,80,443/tcp
+```
+
 ## tmux terminal oturumu aracımızı indiriyoruz.
 ```
 sudo apt install tmux
@@ -81,18 +92,25 @@ tmux new -s massa_node
 cd ~/massa/massa-node/
 ```
 
-##  massa Node'u çalıştırıyoruz. (Bu kısım biraz zaman alabilir.)
+##  massa Node'u çalıştırıyoruz. (<PASSWORD> kısmına şifremizi giriyoruz)
 ```
-RUST_BACKTRACE=full cargo run --release |& tee logs.txt
+./massa-node -p <PASSWORD> |& tee logs.txt
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180028676-ed1aa426-7de1-4960-ad05-34b8776a3bdc.png)
 
+## massa-client dizinine gidiyoruz.
+```
+cd massa/massa-client/
+```
 
+## massa-client başlatıyoruz.  (<PASSWORD> kısmına şifremizi giriyoruz)
+./massa-client -p <PASSWORD>
+![image](https://user-images.githubusercontent.com/73015593/188296133-2f430f07-64e5-4299-8d23-ea6f54ca2a6d.png)
 
+## Massa [discord kanalına](https://discord.gg/J7scURTM) gidiyoruz #✅testnet-rewards-registration kanalına gidiyoruz. ve herhangi bir şey yazdıktan sonra bot'un bize özelden yazmasını bekliyoruz.
+![image](https://user-images.githubusercontent.com/73015593/188296565-566d9c71-09d7-4036-9039-22826a6acc5b.png)
 
-
-
-
+## 
 
 
 
