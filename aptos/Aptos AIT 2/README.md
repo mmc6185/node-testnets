@@ -9,7 +9,12 @@ Aptos AIT 2 testnetine yaklaşık dünya genelinden 200 kişi seçilecek.Her bir
 
 https://medium.com/aptoslabs/welcome-to-aptos-incentivized-testnet-2-af26e2fd69a7
 
-## Sistem gereksinimleri
+# Linkler
+> ## [Discord](https://discord.gg/BuCh3Trg)<br>
+> ## [Aptos website](https://aptoslabs.com/)
+> ## [Aptos explorer](https://aptos-node.info/)
+
+# Sistem gereksinimleri
 ```
 8GB RAM
 300 GB SSD
@@ -133,10 +138,7 @@ https://aptos-node.info/
 ![çalışan](https://user-images.githubusercontent.com/73015593/177657023-c4700b90-25fd-4e1a-91bb-bedb987d350d.PNG)
 
 
-# KYC işlemleri
-
-## KYC sitesine gidiyoruz.
-https://community.aptoslabs.com/it2
+# KYC işlemleri için [aptoslabs](https://community.aptoslabs.com/it2) sitesine gidiyoruz.
 
 ## Public keys bilgilerini öğrenmek için komutumuzu giriyoruz. (NodeName kısmına kendi node isminizi girin. Bunlar kyc formunda doldurmamız gerekecek.)
 ```
