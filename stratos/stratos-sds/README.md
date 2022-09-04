@@ -2,6 +2,12 @@
 
 ![stratos](https://user-images.githubusercontent.com/73015593/177883166-54990a2a-2b9d-4e27-9559-0aed1c36f3f8.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/cSXCpxZN)<br>
+> ## [Stratos website](https://www.seinetwork.io/)
+> ## [Telegram](https://t.me/StratosCommunity)
+> ## [Stratos tropos 4 explorer](https://explorer-tropos.thestratos.org/)
+
 # Node kurulumu 
 
 ## root yetkisi kazanıyoruz.
