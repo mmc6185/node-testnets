@@ -2,7 +2,12 @@
 
 ![forta](https://user-images.githubusercontent.com/73015593/177802204-af0a8c50-d0a1-432c-9a01-682cf4378dee.jpg)
 
-## Sistem gereksinimleri 
+# Linkler
+> ## [Discord](https://discord.gg/78rCzsZ7)<br>
+> ## [Forta website](https://forta.org/)
+> ## [Forta explorer](https://explorer.forta.network/)
+
+# Sistem gereksinimleri 
 ```
 CPU: 4 cores
 Memory: 16GB RAM
