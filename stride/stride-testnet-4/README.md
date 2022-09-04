@@ -14,7 +14,7 @@
 # Linkler
 > ## [Discord](https://discord.gg/m62exje6)<br>
 > ## [Stride website](https://stride.zone/)
-
+> ## [Stride explorer](https://stride.explorers.guru/)
 
 # Node kurulumu
 
@@ -176,8 +176,7 @@ journalctl -u strided -f -o cat
 [sync başladıktan sonra gözüken]
 ![image](https://user-images.githubusercontent.com/73015593/180243931-bc15a3d6-1168-49f4-ac3e-43b183268dd2.png)
 
-## Discord kanalına giriyoruz.
-https://discord.gg/HBjpbcsB
+## [Discord](https://discord.gg/HBjpbcsB) kanalına giriyoruz.
 
 ## token-faucet kanalından "$faucet:cüzdanadresi" biçiminde token istiyoruz. (cüzdanadresi kısmına cüzdan adresinizi yazın)
 ![image](https://user-images.githubusercontent.com/73015593/180241741-f58095ec-a202-4587-9484-7c64af426c39.png)
