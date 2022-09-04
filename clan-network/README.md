@@ -5,7 +5,7 @@
 # Linkler
 > ## [Discord](https://discord.gg/PqRuvd8V)<br>
 > ## [Clan network website](https://www.clan.network/)
-> ## [Stride explorer](https://secretnodes.com/clan/validators)
+> ## [Clan network explorer](https://secretnodes.com/clan/validators)
 
 # Sistem gereksinimleri
 ```
