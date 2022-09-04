@@ -2,7 +2,7 @@
 
 ![bundlr](https://user-images.githubusercontent.com/73015593/180402615-3b816a9e-1978-4e0b-8b16-ae172fc715ab.jpg)
 
-## Sistem gereksinimleri
+# Sistem gereksinimleri
 ```
 8GB RAM
 250 GB GB SSD
