@@ -2,7 +2,13 @@
 
 ![stratos](https://user-images.githubusercontent.com/73015593/177883166-54990a2a-2b9d-4e27-9559-0aed1c36f3f8.jpg)
 
-## Sistem gereksinimleri
+# Linkler
+> ## [Discord](https://discord.gg/cSXCpxZN)<br>
+> ## [Stratos website](https://www.seinetwork.io/)
+> ## [Telegram](https://t.me/StratosCommunity)
+> ## [Stratos tropos 4 explorer](https://explorer-tropos.thestratos.org/)
+
+# Sistem gereksinimleri
 ```
 8GB RAM
 160 GB SSD
@@ -214,8 +220,7 @@ stchaind tx staking create-validator \
 --gas=auto -y
 ```
 
-## explorer'dan kendimizi kontrol ediyoruz.
-https://big-dipper-tropos.thestratos.org/
+## [explorer](https://explorer-tropos.thestratos.org/)'dan kendimizi kontrol ediyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/180935989-4db5fe4e-fb10-410d-92b3-2bc0f1370273.png)
 
 
