@@ -12,7 +12,7 @@
 ```
 
 # Linkler
-> ## [Discord](https://discord.gg/m62exje6)<br>
+> ## [Discord](https://discord.gg/ZWuBuhZf)<br>
 > ## [Stride website](https://stride.zone/)
 > ## [Stride explorer](https://stride.explorers.guru/)
 
