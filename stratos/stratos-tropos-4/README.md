@@ -118,6 +118,24 @@ mv config.toml $HOME/.stchaind/config/
 mv genesis.json  $HOME/.stchaind/config/
 ```
 
+## (Opsiyonel) Pruning açıyoruz. (Disk kullanımını düşürür, cpu ve ram kullanımını arttırır.)
+```
+pruning="custom"
+pruning_keep_recent="100"
+pruning_keep_every="0"
+pruning_interval="10"
+
+sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.stchaind/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.stchaind/config/app.toml
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.stchaind/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.stchaind/config/app.toml
+```
+
+## Indexing kapatıyorız. (Disk kullanımını azaltır.)
+```
+sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.stchaind/config/config.toml
+```
+
 ## servis dosyası oluşturuyoruz.
 ```
 echo "[Unit]
