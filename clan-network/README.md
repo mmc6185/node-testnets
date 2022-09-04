@@ -2,6 +2,11 @@
 
 ![clan](https://user-images.githubusercontent.com/73015593/178373417-1770ae94-ed25-4657-b6f8-b3efff6c340f.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/PqRuvd8V)<br>
+> ## [Clan network website](https://www.clan.network/)
+> ## [Stride explorer](https://secretnodes.com/clan/validators)
+
 # Sistem gereksinimleri
 ```
 4GB RAM
@@ -125,7 +130,7 @@ systemctl enable cland
 systemctl start cland
 ```
 
-## Cüzdanımıza token almak için https://faucet-testnet.clan.network/ sitesine gidiyoruz. Oluşturduğumuz cüzdanın adresini giriyoruz.
+## Cüzdanımıza token almak için [Faucet](https://faucet-testnet.clan.network/) sitesine gidiyoruz. Oluşturduğumuz cüzdanın adresini giriyoruz.
 ![clan](https://user-images.githubusercontent.com/73015593/178375609-d7be60a2-636a-495e-9748-95e417c4ab03.PNG)
 
 
