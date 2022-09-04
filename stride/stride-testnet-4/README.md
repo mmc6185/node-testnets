@@ -4,17 +4,17 @@
 <img width="1000" height="450"  alt="stride" src="https://user-images.githubusercontent.com/73015593/185779826-55d948dd-8785-442d-8d73-899b7d21276a.png">
 </p>
 
+# Linkler
+> ## [Discord](https://discord.gg/ZWuBuhZf)<br>
+> ## [Stride website](https://stride.zone/)
+> ## [Stride explorer](https://stride.explorers.guru/)
+
 # Sistem gereksinimleri
 ```
 8GB RAM
 200 GB SSD
 4 vCPU
 ```
-
-# Linkler
-> ## [Discord](https://discord.gg/ZWuBuhZf)<br>
-> ## [Stride website](https://stride.zone/)
-> ## [Stride explorer](https://stride.explorers.guru/)
 
 # Node kurulumu
 
