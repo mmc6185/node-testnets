@@ -2,8 +2,12 @@
 
 ![stride](https://user-images.githubusercontent.com/73015593/180210525-c011f584-ccd8-464f-8bc3-48b97dade2b4.jpg)
 
+# Linkler
+> ## [Discord](https://discord.gg/ZWuBuhZf)<br>
+> ## [Stride website](https://stride.zone/)
+> ## [Stride explorer](https://stride.explorers.guru/)
 
-## Minimum Sistem gereksinimleri (Genel cosmos sistem gereksinimi)
+# Minimum Sistem gereksinimleri (Genel cosmos sistem gereksinimi)
 ```
 8GB RAM
 200 GB SSD
@@ -238,8 +242,7 @@ https://stride.explorers.guru/validators
 ![image](https://user-images.githubusercontent.com/73015593/180307631-34dac205-33d2-4b07-8ef2-fb83ac61f864.png)
 
 
-## Explorer'dan validatorümüzü kontrol ediyoruz.
-https://stride.explorers.guru/validators
+## [Explorer](https://stride.explorers.guru/validators)'dan validatorümüzü kontrol ediyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/180308024-c08a6019-f44a-43b5-b87e-c138e58ead96.png)
 
 
