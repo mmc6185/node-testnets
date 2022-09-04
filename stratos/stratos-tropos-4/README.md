@@ -131,7 +131,7 @@ sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.stchaind/config/app.toml
 ```
 
-## Indexing kapatıyorız. (Disk kullanımını azaltır.)
+## (Opsiyonel) Indexing kapatıyorız. (Disk kullanımını azaltır.)
 ```
 sed -i -e "s/^indexer *=.*/indexer = \"$indexer\"/" $HOME/.stchaind/config/config.toml
 ```
