@@ -9,6 +9,10 @@ Aptos AIT 3 testnetine dünya genelinden 225 kişi seçilecek.Her bir katılımc
 
 [Daha fazla detay için medium makalesi](https://aptoslabs.medium.com/welcome-to-aptos-incentivized-testnet-3-9d7ce888205c)
 
+# Linkler
+> ## [Discord](https://discord.gg/BuCh3Trg)<br>
+> ## [Aptos website](https://aptoslabs.com/)
+> ## [Aptos explorer](https://node.aptos.zvalid.com/)
 
 # Sistem gereksinimleri
 ```
