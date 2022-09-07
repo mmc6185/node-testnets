@@ -5,33 +5,33 @@
 
 # Bazuka full node kurulumu :
 
-Linux sistem güncellemesi yapıyoruz.
+## inux sistem güncellemesi yapıyoruz.
 ```
 sudo apt-get update && apt-get upgrade -y
 ```
 
-kütüphane kurulum
+## kütüphane kurulum
 ```
 sudo apt-get -y install libssl-dev && apt-get -y install cmake build-essential git wget jq make gcc
 ```
 
-rust toolchain kurulumu yapıyoruz.
+## ust toolchain kurulumu yapıyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 ![image](https://user-images.githubusercontent.com/73015593/188893633-1cf46a23-ca58-41ab-8a6d-125e26e0ac5b.png)
 
-rust versiyonu kontrol ediyoruz.
+## ust versiyonu kontrol ediyoruz.
 ```
 rustc --version
 ```
 
-initialize (başlatma) işlemini yapıyoruz. [your seed phrase] kısmına kendi ismimizi giriyoruz.
+## nitialize (başlatma) işlemini yapıyoruz. [your seed phrase] kısmına kendi ismimizi giriyoruz.
 ```
 bazuka init --seed [your seed phrase] --network debug --node 127.0.0.1:8765
 ```
 
-Zeeka.service dosyamızı oluşturuyoruz. 
+##Zeeka.service dosyamızı oluşturuyoruz. 
 ```
 IPADDR=$(curl icanhazip.com)
 sudo tee <<EOF >/dev/null /etc/systemd/system/zeeka.service
@@ -51,7 +51,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Servisimizi başlatıyoruz.
+## ervisimizi başlatıyoruz.
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable zeeka
