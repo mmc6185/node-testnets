@@ -1,6 +1,8 @@
 # <h1 align="center">Zeeka network bazuka testnet</h1>
 ![image](https://user-images.githubusercontent.com/73015593/188975421-e1d3e3f2-f3fc-4143-839d-97584dc7fca7.png)
 
+> ## [Zeeka Explorer](http://152.228.155.120:8000/)
+
 # Sistem gereksinimleri
 
 # Bazuka full node kurulumu :
