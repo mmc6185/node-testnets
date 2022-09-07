@@ -35,7 +35,7 @@ rustc --version
 ## zeeka'nin github dosyasını zeeka-network repository'den sunucumuza klonluyoruz ve binary kurulumu yapıyoruz.
 ```
 git clone https://github.com/zeeka-network/bazuka
-cd bazuka
+cd ~/bazuka
 cargo install --path .
 ```
 
