@@ -71,11 +71,12 @@ sudo systemctl enable zeeka
 sudo systemctl restart zeeka
 ```
 
-## Log kontrol komutu
+## Log kontrol komutu (Cüzdan bilgilerini kaydetmeyi unutmayın)
 
 ```
 journalctl -u zeeka -f -o cat
 ```
+![wtf](https://user-images.githubusercontent.com/73015593/188985151-fb45241d-d236-4476-8f61-9ae34066f159.PNG)
 
 
 
