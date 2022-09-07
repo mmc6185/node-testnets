@@ -67,7 +67,7 @@ sudo systemctl enable zeeka
 sudo systemctl restart zeeka
 ```
 
-Log kontrol komutu
+## Log kontrol komutu
 
 ```
 journalctl -u zeeka -f -o cat
