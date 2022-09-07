@@ -34,7 +34,7 @@ cd bazuka
 cargo install --path .
 ```
 
-## nitialize (başlatma) işlemini yapıyoruz. [your seed phrase] kısmına kendi ismimizi giriyoruz.
+## initialize (başlatma) işlemini yapıyoruz. [your seed phrase] kısmına kendi ismimizi giriyoruz.
 ```
 bazuka init --seed [your seed phrase] --network debug --node 127.0.0.1:8765
 ```
@@ -59,7 +59,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## ervisimizi başlatıyoruz.
+## servisimizi başlatıyoruz.
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable zeeka
