@@ -15,7 +15,7 @@ sudo apt-get update && apt-get upgrade -y
 sudo apt-get -y install libssl-dev && apt-get -y install cmake build-essential git wget jq make gcc
 ```
 
-## ust toolchain kurulumu yapıyoruz.
+## rust toolchain kurulumu yapıyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
