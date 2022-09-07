@@ -18,12 +18,20 @@ sudo apt-get -y install libssl-dev && apt-get -y install cmake build-essential g
 ## ust toolchain kurulumu yapıyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
 ```
 ![image](https://user-images.githubusercontent.com/73015593/188893633-1cf46a23-ca58-41ab-8a6d-125e26e0ac5b.png)
 
 ## ust versiyonu kontrol ediyoruz.
 ```
 rustc --version
+```
+
+## Stafi'nin github dosyasını stafi repository'den sunucumuza klonluyoruz ve binary kurulumu yapıyoruz.
+```
+git clone https://github.com/zeeka-network/bazuka
+cd bazuka
+cargo install --path .
 ```
 
 ## nitialize (başlatma) işlemini yapıyoruz. [your seed phrase] kısmına kendi ismimizi giriyoruz.
