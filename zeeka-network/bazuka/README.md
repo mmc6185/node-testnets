@@ -22,7 +22,7 @@ source "$HOME/.cargo/env"
 ```
 ![image](https://user-images.githubusercontent.com/73015593/188893633-1cf46a23-ca58-41ab-8a6d-125e26e0ac5b.png)
 
-## ust versiyonu kontrol ediyoruz.
+## rust versiyonu kontrol ediyoruz.
 ```
 rustc --version
 ```
