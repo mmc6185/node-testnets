@@ -5,7 +5,7 @@
 
 # Bazuka full node kurulumu :
 
-## inux sistem güncellemesi yapıyoruz.
+## Linux sistem güncellemesi yapıyoruz.
 ```
 sudo apt-get update && apt-get upgrade -y
 ```
