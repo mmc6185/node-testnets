@@ -14,6 +14,7 @@ sudo apt-get update && apt-get upgrade -y
 ```
 sudo apt-get -y install libssl-dev && apt-get -y install cmake build-essential git wget jq make gcc
 ```
+![image](https://user-images.githubusercontent.com/73015593/188980061-1e5037b8-d904-4123-9554-a78de3932542.png)
 
 ## rust toolchain kurulumu yapıyoruz.
 ```
