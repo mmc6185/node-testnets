@@ -44,7 +44,7 @@ cargo install --path .
 bazuka init --seed [your seed phrase] --network debug --node 127.0.0.1:8765
 ```
 
-## Zeeka.service dosyamızı oluşturuyoruz. 
+## Zeeka.service dosyamızı oluşturuyoruz. ExecStart kısmının sonuna kendi discord bilgimizi giriyoruz 
 ```
 IPADDR=$(curl icanhazip.com)
 sudo tee <<EOF >/dev/null /etc/systemd/system/zeeka.service
