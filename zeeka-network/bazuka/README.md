@@ -27,7 +27,7 @@ source "$HOME/.cargo/env"
 rustc --version
 ```
 
-## Stafi'nin github dosyasını stafi repository'den sunucumuza klonluyoruz ve binary kurulumu yapıyoruz.
+## zeeka'nin github dosyasını zeeka-network repository'den sunucumuza klonluyoruz ve binary kurulumu yapıyoruz.
 ```
 git clone https://github.com/zeeka-network/bazuka
 cd bazuka
