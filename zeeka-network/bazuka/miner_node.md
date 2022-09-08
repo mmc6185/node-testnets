@@ -55,7 +55,7 @@ sudo apt install curl
 ## Exchange authorization code for tokens tıklıyoruz. Oluşan `access_token` kısmını kopyalıyoruz.
 ![1](https://user-images.githubusercontent.com/73015593/189121544-29cefe00-0432-440c-95f0-7e2f079839b2.png)
 
-##  access_token kısmına kopyaladığımız token imsinizi yapıştırıyoruz.
+##  access_token kısmına kopyaladığımız access_token'i yapıştırıyoruz.
 ```
 curl -H "Authorization: Bearer access_token" https://www.googleapis.com/drive/v3/files/1sR-dJlr4W_A0sk37NkZaZm8UncMxqM-0?alt=media -o payment_params.dat
 ```
@@ -69,7 +69,7 @@ curl -H "Authorization: Bearer access_token" https://www.googleapis.com/drive/v3
 ## Exchange authorization code for tokens tıklıyoruz. Oluşan `access_token` kısmını kopyalıyoruz.
 ![1](https://user-images.githubusercontent.com/73015593/189121544-29cefe00-0432-440c-95f0-7e2f079839b2.png)
 
-##  access_token kısmına kopyaladığımız token imsinizi yapıştırıyoruz.
+##  access_token kısmına kopyaladığımız access_token'i yapıştırıyoruz.
 ```
 curl -H "Authorization: Bearer access_token" https://www.googleapis.com/drive/v3/files/149tUhC0oXJxsXDnx7vODkOZtIYzC_5HO?alt=media -o update_params.dat
 ```
