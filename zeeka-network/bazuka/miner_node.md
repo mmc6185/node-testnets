@@ -77,7 +77,7 @@ curl -H "Authorization: Bearer access_token" https://www.googleapis.com/drive/v3
 
 ## Node ile beraber `zoro` çalıştırıyoruz. `[executor account]` Kısmına node için kullandığımızdan farklı bir isim girmemiz lazım.
 ```
-zoro --node 127.0.0.1:8765 --seed aaaaa --network debug \
+zoro --node 127.0.0.1:8765 --seed [executor account] --network debug \
   --update-circuit-params ~/zoro/update_params.dat --payment-circuit-params ~/zoro/payment_params.dat \
   --db ~/.bazuka-debug
 ```
@@ -92,7 +92,53 @@ cargo install --path .
 uzi-miner --node 127.0.0.1:8765 --threads THREADNUMBER
 ```
 
-# Ek komutlar
+## zoro servis dosyası oluşturuyoruz. `[executor account]` kısmına yukarda zoro başlatırken girdiğimiz ismi giriyoruz. 
+```
+tee /etc/systemd/system/zoro.service > /dev/null <<EOF
+[Unit]
+Description=Zoro
+After=network.target
+[Service]
+User=root
+ExecStart=/root/.cargo/bin/zoro --node 127.0.0.1:8765 --seed '[executor account]' --network debug --update-circuit-params ~/zoro/update_params.dat --payment-circuit-params ~/zoro/payment_params.dat --db ~/.bazuka-debug
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+## uzi-miner servis dosyası oluşturuyoruz. `THREADNUMBER` Kısmına yukarda uzi miner başlatırken girdiğimiz thread sayısınız giriyoruz.
+```
+tee /etc/systemd/system/uzi.service > /dev/null <<EOF
+[Unit]
+Description=Uzi
+After=network.target
+[Service]
+User=root
+ExecStart=/root/.cargo/bin/uzi-miner --node 127.0.0.1:8765 --threads THREADNUMBER
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+## zoro servisi oluşturuyoruz. 
+```
+sudo systemctl daemon-reload
+sudo systemctl enable zoro
+sudo systemctl restart zoro
+```
+
+## uzi miner servisi oluşturuyoruz.
+```
+sudo systemctl daemon-reload
+sudo systemctl enable uzi
+sudo systemctl restart uzi
+```
 
 ## Zero contract Para Yatırın
 ```
@@ -102,11 +148,6 @@ bazuka deposit
 ## Bu mesajı veya verilen alt komutların yardımını yazdırma komutu :
 ```
 bazuka help 
-```
-
-## Node initialize komutu:
-```
-bazuka init Initialize node/wallet
 ```
 
 ## Node çalıştırma:
