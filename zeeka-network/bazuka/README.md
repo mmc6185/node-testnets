@@ -77,6 +77,7 @@ sudo systemctl restart zeeka
 journalctl -u zeeka -f -o cat
 ```
 ![wtf](https://user-images.githubusercontent.com/73015593/188985151-fb45241d-d236-4476-8f61-9ae34066f159.PNG)
+![image](https://user-images.githubusercontent.com/73015593/189038698-7cdd5078-5bb9-41f4-80c6-0d0ae3c7fc7c.png)
 
 
 
