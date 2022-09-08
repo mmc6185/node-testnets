@@ -16,9 +16,9 @@ Gpu : 2080Ti card (zk snark optimizasyonu için güzel)
 ![image](https://user-images.githubusercontent.com/73015593/189064782-b1c4390c-3d4b-41a8-8ec8-8e6ed5877655.png)
 ![image](https://user-images.githubusercontent.com/73015593/189064907-d8499f48-9478-4916-a7e5-07b3e92b7745.png)
 
-# Bazuke miner kurulumu  
+# Bazuka miner kurulumu  
 
-## Bazuke sürümünü kontrol ediyoruz. (`DifferentGenesis` hatası alırsanız genesis blok değişmiş demektir. Bu durumda `~/.bazuka-debug` klasörünü silmeniz ve yeniden başlatmanız gerekir.)
+## Bazuka sürümünü kontrol ediyoruz. (`DifferentGenesis` hatası alırsanız genesis blok değişmiş demektir. Bu durumda `~/.bazuka-debug` klasörünü silmeniz ve yeniden başlatmanız gerekir.)
 ```
 cd ~/bazuka
 git pull origin master
