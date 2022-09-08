@@ -2,7 +2,7 @@
 
 ![stafihub](https://user-images.githubusercontent.com/73015593/177637610-b96608a2-e2b9-4baf-8b78-d6a6caf60f99.jpg)
 
-## Sistem gereksinimleri
+# Sistem gereksinimleri
 ```
 8GB RAM
 300 GB SSD
