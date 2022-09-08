@@ -2,6 +2,8 @@
 
 ![zeeka](https://user-images.githubusercontent.com/107190154/189072552-813693a4-3c3a-4fbd-9735-28f36acb3f4a.png)
 
+## [Orijinal Flood linki](https://github.com/brsbrc/Testnetler-ve-Rehberler/tree/main/Zeeka-Network)
+
 **Full Node, bu sebeple sistem gereksinimleri küçük bir makineye kurabilirsiniz.**
 
 **Bu Full Node için herhangi bir teşvik söz konusu değildir.**
