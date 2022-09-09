@@ -160,6 +160,7 @@ cd $HOME/massa/massa-client/
 ```
 buy_rolls walletAddress 1 0
 ```
+![image](https://user-images.githubusercontent.com/73015593/189447804-5c93be9d-eb6f-4eed-9a59-bf5963518aea.png)
 
 ## Bot'a sunucu ip adresimizi gönderiyoruz.
 ![image](https://user-images.githubusercontent.com/73015593/189433133-d69be7c4-0895-4e1d-83f7-d6888c7784a3.png)
