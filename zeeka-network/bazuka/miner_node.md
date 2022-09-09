@@ -174,3 +174,8 @@ bazuka withdraw
 ```
 bazuka zsend
 ```
+
+
+> ## [Web Site](https://zeeka.io/)
+> ## [Zeeka Explorer](http://152.228.155.120:8000/)
+> ## [Zeeka Discord](https://discord.gg/vWkHJ8QU)
