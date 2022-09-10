@@ -140,7 +140,7 @@ sudo systemctl restart massa-node
 
 ## massa client başlatıyoruz. 
 * `[walletpassword]` kısmına cüzdan şifremizi giriyoruz.
-* --wallet $HOME/massa/massa-client/wallet.dat daha önce cüzdan oluşturmadıysanız `wallet_generate_secret_key` girin.
+* --wallet $HOME/massa/massa-client/wallet.dat yerine daha önce cüzdan oluşturmadıysanız `wallet_generate_secret_key` girin.
 ```
 cd $HOME/massa/massa-client/
 ./massa-client --wallet $HOME/massa/massa-client/wallet.dat -p [walletpassword]
