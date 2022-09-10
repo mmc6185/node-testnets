@@ -19,7 +19,7 @@
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-![image](https://user-im
+
 
 ## Kütüphane kurulumu yapıyoruz.
 ```
@@ -68,6 +68,9 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable gear
 sudo systemctl restart gear
+```
+## Log Kontrol
+```
 journalctl -u gear -f -o cat
 ```
 ![image](https://user-images.githubusercontent.com/73015593/189450105-87e38ecc-c7e7-41e0-b5eb-b5ee81def7ae.png)
