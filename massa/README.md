@@ -156,7 +156,7 @@ cd $HOME/massa/massa-client/
 ## #⌠💸⌡testnet-faucet kanalına gidiyoruz ve cüzdan adresimizi gönderiyoruz. (Cüzdan bilgilerine bakmak için `wallet_info` komutunu gireriz.)
 ![image](https://user-images.githubusercontent.com/73015593/189433642-d563dec7-ef95-4044-b951-11274241c359.png)
 
-## Gelen tokenler ile rol satın alıyoruz. (walletAddress kısmına cüzdan adresimizi giriyoruz.)
+## Gelen tokenler ile rol satın alıyoruz. (`walletAddress` kısmına cüzdan adresimizi giriyoruz.)
 ```
 buy_rolls walletAddress 1 0
 ```
@@ -170,7 +170,7 @@ buy_rolls walletAddress 1 0
 node_add_staking_secret_keys secretKeys 
 ```
 
-## Testnete kayıt yaptırıyoruz. (staking_address kısmına cüzdan adresimizi, discordId kısmına discord Id mizi giriyoruz.) 
+## Testnete kayıt yaptırıyoruz. (`staking_address` kısmına cüzdan adresimizi, `discordId` kısmına discord Id mizi giriyoruz.) 
 ```
 node_testnet_rewards_program_ownership_proof staking_address discordId
 ```
