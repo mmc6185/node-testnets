@@ -1,1 +1,17 @@
-
+{
+    "chain_name": "stratos",
+    "api": ["https://38.242.237.103:1317"], 
+    "rpc": ["http://38.242.237.103:1317"],
+    "sdk_version": "0.42.6",
+    "coin_type": "118",
+    "min_tx_fee": "800",
+    "assets": [{
+        "base": "ustos",
+        "symbol": "STOS",
+        "exponent": "6",
+        "coingecko_id": "cosmos", 
+        "logo": "https://raw.githubusercontent.com/mmc6185/node-testnets/blob/main/stratos/explorer/stratos.png"
+    }],
+    "addr_prefix": "stratos",
+    "logo": "https://raw.githubusercontent.com/mmc6185/node-testnets/blob/main/stratos/explorer/stratos.png"
+}
