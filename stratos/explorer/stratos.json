@@ -9,7 +9,7 @@
         "base": "ustos",
         "symbol": "STOS",
         "exponent": "6",
-        "coingecko_id": "stratos", 
+        "coingecko_id": "", 
         "logo": "https://raw.githubusercontent.com/mmc6185/node-testnets/blob/main/stratos/explorer/stratos.png"
     }],
     "addr_prefix": "stratos",
