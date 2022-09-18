@@ -5,7 +5,7 @@
 # Linkler
 > ## [Discord](https://discord.gg/gD2qAZxy)<br>
 > ## [Bundlr website](https://bundlr.network/)
-> ## [Bundlr explorer](https://node.aptos.zvalid.com/)
+> ## [Bundlr explorer](https://bundlr.network/explorer/)
 
 # Sistem gereksinimleri
 ```
