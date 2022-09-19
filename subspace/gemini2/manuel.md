@@ -62,7 +62,15 @@ sudo systemctl enable subspaced
 sudo systemctl restart subspaced
 ```
 
-## 8- Farmer için farmerd isimli bir servis oluşturuyoruz. (walletAddress kısmına ödül almak istediğimiz cüzdan adresimizi giriyoruz.plotSize kısmına plot boyutunu giriyoruz)
+## 8- [Polkadot.js](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd) Cüzdan eklentisi tarayıcımıza indiriyoruz.
+![image](https://user-images.githubusercontent.com/73015593/191125812-304eebe5-a9db-4418-bddd-ed97c986d938.png)
+
+## 9- Cüzdan oluşturduktan sonra sağ üstten ayarlardan format şeklini subspace olarak seçiyoruz.Oluşan cüzdan adresini kopyalıyoruz.
+![image](https://user-images.githubusercontent.com/73015593/191126053-abded3d2-5553-40ad-80dc-2e020380e3ff.png)
+
+## 10- Farmer için farmerd isimli bir servis oluşturuyoruz. 
+* walletAddress kısmına ödül almak istediğimiz cüzdan adresimizi giriyoruz.
+* plotSize kısmına plot boyutunu giriyoruz. (100G girebilirsiniz)
 ```
 sudo tee <<EOF >/dev/null /etc/systemd/system/farmerd.service
 [Unit]
@@ -81,21 +89,24 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## 9- Farmer servisimizi başlatıyoruz.
+## 11- Farmer servisimizi başlatıyoruz.
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable farmerd
 sudo systemctl restart farmerd
 ```
 
-## Node loglarımıza bakıyoruz. 
+## 12- Node loglarımıza bakıyoruz. (Aşağıdaki gibi bir çıktı almanız lazım.)
 ```
 journalctl -u subspaced -f -o cat
 ```
 ![image](https://user-images.githubusercontent.com/73015593/191123736-54a27507-4911-42b4-ae37-2d685257ae38.png)
 
-
-
+## Sync kontrol etmek için : (isSynincg:false çıktısı almanız lazım)
+```
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "system_health", "params":[]}' http://localhost:9933
+```
+![image](https://user-images.githubusercontent.com/73015593/191126248-714aee95-0824-4e36-aaa8-7acf2ce5c992.png)
 
 
 
