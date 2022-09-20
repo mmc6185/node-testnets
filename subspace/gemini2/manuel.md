@@ -6,6 +6,15 @@
 > ## [Subspace Explorer](https://telemetry.subspace.network/#list/)
 > ## [Subspace Discord](https://discord.gg/97XHpF4p)
 
+# Sistem gereksinimleri.
+```
+CPU	2 Core+
+RAM	4GB+ (Rec. 8GB)
+Storage	150GB
+```
+![image](https://user-images.githubusercontent.com/73015593/191175509-3b95233d-04de-4279-a15c-f77da27bae84.png)
+
+# Node kurulumu
 
 ## 1- Sistem güncellemesi yapıyoruz.
 ```
