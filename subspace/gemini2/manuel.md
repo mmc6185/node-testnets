@@ -26,7 +26,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu gcc git jq chrony unzip liblz4-tool -y
 ```
 
-## 3- Supspace node ve farmer binary dosyasalarını indiriyoruz.
+## 3- Subspace node ve farmer binary dosyasalarını indiriyoruz.
 ```
 cd $HOME
 wget -qO subspace-node-ubuntu-x86_64-gemini-2a-2022-sep-10 https://github.com/subspace/subspace/releases/download/gemini-2a-2022-sep-10/subspace-node-ubuntu-x86_64-gemini-2a-2022-sep-10
