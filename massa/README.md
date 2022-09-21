@@ -173,7 +173,7 @@ node_testnet_rewards_program_ownership_proof staking_address discordId
 ![image](https://user-images.githubusercontent.com/73015593/189439183-a69e2f3b-de4c-4c05-9b0b-180639b4a86a.png)
 
 
-# Script ile kurmak isteyenler için [LetskyNode])https://teletype.in/@letskynode/Massa) hazırladığı harika bir döküman.
+# Script ile kurmak isteyenler için [LetskyNode](https://teletype.in/@letskynode/Massa) hazırladığı harika bir döküman.
 
 
 
