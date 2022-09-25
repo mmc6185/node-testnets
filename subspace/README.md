@@ -117,7 +117,7 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 ```
 ![image](https://user-images.githubusercontent.com/73015593/191126248-714aee95-0824-4e36-aaa8-7acf2ce5c992.png)
 
-13- Kazandığınız ödülleri kontrol etmek için [Link](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Feu-0.gemini-2a.subspace.network%2Fws#/accounts)
+## 13- Kazandığınız ödülleri kontrol etmek için [Link](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Feu-0.gemini-2a.subspace.network%2Fws#/accounts)
 * Ayrıca 0.5 den fazla puan kazanmanın bir önemi yok daha fazla kazılan tokenler işlevsiz olacak. 0.5 token kazdıktan sonra sunucuları kapatabilirsiniz.
 
 
