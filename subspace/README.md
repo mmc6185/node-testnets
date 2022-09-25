@@ -121,4 +121,13 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 * Ayrıca 0.5 den fazla puan kazanmanın bir önemi yok daha fazla kazılan tokenler işlevsiz olacak. 0.5 token kazdıktan sonra sunucuları kapatabilirsiniz.
 
 
+## 14- Subspace node kaldırmak için 
+```
+rm -rf ~/.local/share/subspace*
+rm -rf /etc/systemd/system/subspace*
+rm -rf /usr/local/bin/subspace*
 
+
+rm -r $HOME/.local/share/subspace-farmer
+rm -r $HOME/.local/share/subspace-node
+``` 
