@@ -131,6 +131,10 @@ ollod status 2>&1 | jq .SyncInfo
 ollod keys add walletName
 ```
 
+## Token almak için [Disord](https://discord.gg/9hKbCb87) kanalına gidiyoruz.
+* Roles kanalından Testnet Explorers rolünü alıyoruz.
+* testnet-faucet kanalından `!request TARGET-ADDRESS-HERE` Biçiminde token talep ediyoruz.
+
 ## Validator oluşturuyoruz. 
 * NodeName kısmına kendi node ismimizi.
 * WalletName kısmına ise cüzdan ismimizi giriyoruz 
