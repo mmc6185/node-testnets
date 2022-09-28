@@ -119,7 +119,9 @@ sudo systemctl restart systemd-journald
 sudo systemctl daemon-reload
 sudo systemctl enable ollod
 sudo systemctl restart ollod
+journalctl -u ollod -f -o cat
 ```
+![image](https://user-images.githubusercontent.com/73015593/192783155-a9a2209e-0058-4435-86a7-7da9aa55f89f.png)
 
 ## Sync kontrolü için aşağıdaki komutu gireriz. sync olmak için catching_up : false çıktısı almamız lazım.
 ```
@@ -134,6 +136,8 @@ ollod keys add walletName
 ## Token almak için [Disord](https://discord.gg/9hKbCb87) kanalına gidiyoruz.
 * Roles kanalından Testnet Explorers rolünü alıyoruz.
 * testnet-faucet kanalından `!request TARGET-ADDRESS-HERE` Biçiminde token talep ediyoruz.
+![image](https://user-images.githubusercontent.com/73015593/192783010-ecf5d35a-ef91-412f-b2f5-7b25754d30e1.png)
+![image](https://user-images.githubusercontent.com/73015593/192783083-1e08730b-d2f7-473a-a6b4-5aa6aa7034ea.png)
 
 ## Validator oluşturuyoruz. 
 * NodeName kısmına kendi node ismimizi.
@@ -154,6 +158,8 @@ ollod tx staking create-validator \
 --from=WalletName \
 --yes
 ```
+
+# STATE - SYNC Kurmak isteyenler için [LINK](https://www.theamsolutions.info/ollo)
 
 # Yararlı komutlar
 
