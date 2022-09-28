@@ -60,12 +60,6 @@ make install
 ollod init NodeName --chain-id ollo-testnet-0
 ```
 
-## Cüzdan oluşturuyoruz
-```
-ollod keys add WalletName 
-```
-![tempsnip](https://user-images.githubusercontent.com/73015593/192776519-0ae7bfd9-a030-4422-8a17-0d2b53c46b77.png)
-
 ## Genesis dosyasını indiriyoruz:
 ```
 curl https://raw.githubusercontent.com/OllO-Station/ollo/master/networks/ollo-testnet-0/genesis.json | jq .result.genesis > $HOME/.ollo/config/genesis.json
@@ -128,10 +122,11 @@ journalctl -u ollod -f -o cat
 ollod status 2>&1 | jq .SyncInfo
 ```
 
-## Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın (Yeni cüzdan oluşturacaklar için)
+## Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın. Sonrasında çıkan mnemonic(24 kelime) bilgisini kaydedin (Yeni cüzdan oluşturacaklar için)
 ```
 ollod keys add walletName
 ```
+![tempsnip](https://user-images.githubusercontent.com/73015593/192776519-0ae7bfd9-a030-4422-8a17-0d2b53c46b77.png)
 
 ## Token almak için [Disord](https://discord.gg/9hKbCb87) kanalına gidiyoruz.
 * Roles kanalından Testnet Explorers rolünü alıyoruz.
