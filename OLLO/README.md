@@ -117,11 +117,12 @@ ollod status 2>&1 | jq .SyncInfo
 ## Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın (Yeni cüzdan oluşturacaklar için)
 ```
 ollod keys add walletName
-``
+```
 
 ## Validator oluşturuyoruz. 
 * NodeName kısmına kendi node ismimizi.
 * WalletName kısmına ise cüzdan ismimizi giriyoruz 
+
 ```
 ollod tx staking create-validator \
 --moniker="NodeName" \
@@ -182,6 +183,7 @@ ollod tx staking delegate ValoperAddress TOKENAMOUNTusei --from=WalletName --cha
 ```
 
 ## Proposal'da oy vermek için 
+
 * PROPOSALNUMBER proposal numarasını giriyoruz.
 * "yes/no" kısmına Oylamadaki fikrimizi giriyoruz.
 ```
