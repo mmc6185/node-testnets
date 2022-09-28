@@ -117,12 +117,11 @@ ollod status 2>&1 | jq .SyncInfo
 ## Cüzdan oluşturmak için walletName kısmına kendi cüzdan isminizi yazın (Yeni cüzdan oluşturacaklar için)
 ```
 ollod keys add walletName
-```
+``
 
-## Sync tamamlandıktan sonra validator oluşturabilmek için [Form](https://docs.google.com/spreadsheets/d/15reUshGJ4P3oS9kesCg9jO2M1zTsUE34TC8X11Sp2mA/edit#gid=0)'a gidiyoruz.Validator adresimizi ve cüzdan adresimizi giriyoruz.
-![image](https://user-images.githubusercontent.com/73015593/187340619-0a5f720e-94a9-41d5-84df-22ee07cd2416.png)
-
-## Validator oluşturuyoruz. NodeName kısmına kendi node ismimizi.WalletName kısmına ise cüzdan ismimizi giriyoruz 
+## Validator oluşturuyoruz. 
+* NodeName kısmına kendi node ismimizi.
+* WalletName kısmına ise cüzdan ismimizi giriyoruz 
 ```
 ollod tx staking create-validator \
 --moniker="NodeName" \
@@ -172,7 +171,7 @@ ollod query bank balances walletname
 
 ## Token transfer etmek için (FIRST_WALLET_ADDRESS kısmına gönderen cüzdanı,SECOND_WALLET_ADDRESS kısmına alıcı cüzdanı, TOKENAMOUNT kısmına göndermek istediğiniz token miktarını giriyoruz.)
 ```
-ollod tx bank send FIRST_WALLET_ADDRESS SECOND_WALLET_ADDRESS TOKENAMOUNTusei
+ollod tx bank send FIRST_WALLET_ADDRESS SECOND_WALLET_ADDRESS TOKENAMOUNTutollo
 ```
 
 ## Delegate komutu 
@@ -186,7 +185,7 @@ ollod tx staking delegate ValoperAddress TOKENAMOUNTusei --from=WalletName --cha
 * PROPOSALNUMBER proposal numarasını giriyoruz.
 * "yes/no" kısmına Oylamadaki fikrimizi giriyoruz.
 ```
-ollod tx gov vote PROPOSALNUMBER yes/no --from WalletName --chain-id=ollo-testnet-0 --gas auto --gas-prices 0.025usei --gas-adjustment 1.5
+ollod tx gov vote PROPOSALNUMBER yes/no --from WalletName --chain-id=ollo-testnet-0 --gas auto --gas-prices 0.025utollo --gas-adjustment 1.5
 ```
 
 
