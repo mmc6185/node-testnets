@@ -49,7 +49,6 @@ git clone https://github.com/OllO-Station/ollo.git
 ## Binary kurulumunu yapıyoruz.
 ```
 cd $HOME/ollo
-git checkout 1.1.2beta-internal
 make install
 ```
 ![image](https://user-images.githubusercontent.com/73015593/192775577-8aa8be14-41dc-4897-a82f-951550d886e4.png)
