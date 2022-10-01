@@ -17,16 +17,6 @@
 
 # Node kurulumu 
 
-## root yetkisi kazanıyoruz.
-```
-sudo su
-```
-
-## root dizinine gidiyoruz.
-```
-cd /root
-```
-
 ## Sistem güncellemesi yapıyoruz.
 ```
 sudo apt update && sudo apt upgrade -y
