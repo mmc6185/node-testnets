@@ -1,6 +1,13 @@
 # <h1 align="center">Newrl</h1>
 ![image](https://user-images.githubusercontent.com/73015593/194648553-635061bf-3dbf-4517-a1d6-3a0063f76439.png)
 
+### Kaynak döküman : [Link](https://www.publish0x.com/pramonoutomo/newrl-nodes-installation-xxzvrdp)
+### Kaynak video : [Link](https://www.youtube.com/watch?v=1MfI3_shvsg)
+
+# Linkler
+> ## [Discord](https://discord.gg/A2bqeqSX)
+> ## [Newrl website](https://newrl.net/)
+
 ## Sistem güncellemesi yapıyoruz
 ```
 apt-get install update && apt-get upgrade -y
