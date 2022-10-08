@@ -3,6 +3,7 @@
 
 ### Kaynak döküman : [Link](https://www.publish0x.com/pramonoutomo/newrl-nodes-installation-xxzvrdp)
 ### Kaynak video : [Link](https://www.youtube.com/watch?v=1MfI3_shvsg)
+### Kaynak Türkçe video : [Link](https://youtu.be/Zxpiv0YQoJA)
 
 # Linkler
 > ## [Discord](https://discord.gg/A2bqeqSX)
