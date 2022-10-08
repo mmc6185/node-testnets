@@ -78,8 +78,9 @@ scripts/start.sh testnet
 ![image](https://user-images.githubusercontent.com/73015593/194664743-a562f3c6-3a0c-44db-ba78-7a5cb394fbbe.png)
 
 ## Son olarak kendiniz kontrol etmek için : (Success çıktısı almanız lazım)
+* cüzdan adresi kısmına kendi cüzdan adresinizi girin
 ```
-http://archive1-testnet1.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ct1111111111111111111111111111111111111115&unique_column=wallet_address&unique_value=0x80815f3971e13922d84eaf1cfc1a722a52db2aab
+http://archive1-testnet1.newrl.net:8421/sc-state?table_name=stake_ledger&contract_address=ct1111111111111111111111111111111111111115&unique_column=wallet_address&unique_value=cüzdanadresi
 ```
 ![image](https://user-images.githubusercontent.com/73015593/194668205-6203c110-f2a3-4094-829c-e5268b887af8.png)
 
