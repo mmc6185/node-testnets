@@ -32,6 +32,8 @@ sudo apt install make clang curl pkg-config libssl-dev build-essential git jq nc
 ## Rust kurulumu yapıyoruz. 1 diyerek Proceed with installation (default) kurulumu yapıyoruz.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+```
 source $HOME/.cargo/env
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180025712-25d76b2a-72f4-43ee-abf2-6bdb110359bc.png)
