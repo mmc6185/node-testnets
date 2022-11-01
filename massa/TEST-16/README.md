@@ -55,7 +55,7 @@ rustup toolchain install nightly
 rustup default nightly
 ```
 
-## massa repository'den `massa 15.1` binary dosyasını indiriyoruz.
+## massa repository'den `massa 16.0` binary dosyasını indiriyoruz.
 ```
 wget -O massa.tar.gz https://github.com/massalabs/massa/releases/download/TEST.16.0/massa_TEST.16.0_release_linux.tar.gz
 tar -xzf massa.tar.gz
