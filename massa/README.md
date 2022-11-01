@@ -92,13 +92,9 @@ sudo systemctl enable massa-node
 sudo systemctl restart massa-node
 ```
 
-## Daha önce wallet oluşturanlar eski wallet.dat dosyasını sunucuda `$HOME/massa/massa-client` dizini altına atıyoruz.
+## Daha önce wallet oluşturanlar eski wallet.dat dosyasını sunucuda `$HOME/massa/massa-client` dizini altına atıyoruz. (wallet.dat dosyasını saklamadıysanız yapılacaklar aşağıda anlatılacak)
 ![image](https://user-images.githubusercontent.com/73015593/189427917-632b6ff0-cd0b-45ed-9181-7c8080973d1e.png)
-### wallet.dat dosyasını saklamdıysanız :
-* secret_key kısmına secrey key'i yazıyoruz.
-```
-wallet_add_secret_keys secret_key
-```
+
 
 ## massa client başlatıyoruz. 
 * `[walletpassword]` kısmına cüzdan şifremizi giriyoruz.
@@ -108,6 +104,12 @@ cd $HOME/massa/massa-client/
 ./massa-client --wallet $HOME/massa/massa-client/wallet.dat -p [walletpassword]
 ```
 ![image](https://user-images.githubusercontent.com/73015593/189431398-7ad587a0-c9b1-46b2-b485-ee370ccf4c5a.png)
+
+### !!! wallet.dat dosyasını saklamdıysanız !!!
+* secret_key kısmına secrey key'i yazıyoruz.
+```
+wallet_add_secret_keys secret_key
+```
 
 ## [Massa Discord](https://discord.gg/J7scURTM)'una gidiyoruz. 
 ![image](https://user-images.githubusercontent.com/73015593/189432317-2044f944-e9ac-4f72-bf62-3d8a0911289a.png)
