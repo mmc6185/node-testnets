@@ -90,7 +90,7 @@ mv genesis.json $HOME/.gitopia/config/genesis.json
 ```
 ## Binary dosyasını `/usr/bin` altına taşıyoruz.
 ```
-mv go/bin/gitopiad /usr/bin/
+mv $HOME/go/bin/gitopiad /usr/bin/
 ```
 
 ## Servis dosyasını oluşturuyoruz.
