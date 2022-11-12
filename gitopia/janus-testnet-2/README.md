@@ -81,6 +81,17 @@ sed -i.bak -e "s/^indexer *=.*/indexer = \"null\"/" ~/.gitopia/config/config.tom
 ```
 sed -i 's#seeds = ""#seeds = "399d4e19186577b04c23296c4f7ecc53e61080cb@seed.gitopia.com:26656"#' $HOME/.gitopia/config/config.toml
 ```
+## Pruning açıyoruz. (Daha düşük disk kullanımı sağlar ancak cpu ve ram kullanımı artar)
+```
+pruning="custom"
+pruning_keep_recent="100"
+pruning_keep_every="0"
+pruning_interval="50"
+sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" $HOME/.gitopia/config/app.toml
+sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_recent\"/" $HOME/.gitopia/config/app.toml
+sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.gitopia/config/app.toml
+sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.gitopia/config/app.toml
+```
 
 ## Genesis dosyasını indiriyoruz.
 ```
@@ -124,6 +135,9 @@ sudo journalctl -u gitopiad -f -o cat
 ```
 gitopiad keys add wallet
 ```
+
+## [Gitopia](https://gitopia.com/home) sitesine giderek keplr cüzdanımızı bağlıyoruz. Get tlore diyerek faucetten 10 adet token alıyoruz. 
+![image](https://user-images.githubusercontent.com/73015593/201479305-76f07308-d924-429d-9fde-772bf46b65e9.png)
 
 ## Sync olup olmadığımızı kontrol ediyoruz.
 * False çıktısı almadan validator kurmuyoruz.
