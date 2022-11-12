@@ -56,7 +56,7 @@ git clone -b v1.2.0 gitopia://gitopia/gitopia
 cd gitopia && make install
 ```
 
-## Versiyon kontrolü yapıyoruz. (v0.1.2) çıktısı almanız lazım.
+## Versiyon kontrolü yapıyoruz. (v1.2.0) çıktısı almanız lazım.
 ```
 gitopiad version
 ```
