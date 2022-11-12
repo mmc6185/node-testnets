@@ -12,7 +12,7 @@ https://gitopia.com/CryptoSailors/gitopia-node-installation/tree/master/
 ```
 4 CPU
 16 GB RAM
-1000 GB SSD
+200-1000 GB SSD
 ```
 
 ## Sistem güncellemesi yapıyoruz.
