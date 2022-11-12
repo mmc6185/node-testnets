@@ -164,6 +164,8 @@ gitopiad tx staking create-validator \
 -y
 ```
 
+## Çok eski bir form olmasına rağmen validator kurduktan sonra formu dolduralım [LINK](https://airtable.com/shrMQFJxcsMD0XV2M)
+
 # Yardımcı komutlar ([Kj Nodes](https://github.com/kj89/testnet_manuals/blob/main/gitopia/)'ten alıntı)
 
 
