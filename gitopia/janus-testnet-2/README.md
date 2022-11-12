@@ -178,12 +178,12 @@ sudo systemctl restart gitopiad
 gitopiad status 2>&1 | jq .SyncInfo
 ```
 
-Validator bilgisi görmek için
+## Validator bilgisi görmek için
 ```
 gitopiad status 2>&1 | jq .ValidatorInfo
 ```
 
-Node bilgisi görmek için
+## Node bilgisi görmek için
 ```
 gitopiad status 2>&1 | jq .NodeInfo
 ```
@@ -204,13 +204,13 @@ gitopiad keys list
 gitopiad keys add WalletName --recover
 ```
 
-Cüzdan silmek için
+## Cüzdan silmek için
 * WalletName kısmına kendi cüzdan isminizi giriyorsunuz.
 ```
 gitopiad keys delete WalletName
 ```
 
-Token bakiyesini görmek için
+## Token bakiyesini görmek için
 * WalletAddress kısmına kendi cüzdan adresinizi giriyorsunuz.
 ```
 gitopiad query bank balances WalletAddress
