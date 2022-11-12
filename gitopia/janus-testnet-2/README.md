@@ -112,9 +112,10 @@ EOF
 
 ##  Node'u başlatıyoruz.
 ```
-systemctl start gitopiad
-systemctl enable gitopiad
-journalctl -u gitopiad -f -n 100
+sudo systemctl daemon-reload
+sudo systemctl start gitopiad
+sudo systemctl enable gitopiad
+sudo journalctl -u gitopiad -f -o cat
 ```
 
 ## Cüzdan oluşturuyoruz. 
