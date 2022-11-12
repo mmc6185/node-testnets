@@ -136,7 +136,7 @@ sudo journalctl -u gitopiad -f -o cat
 gitopiad keys add wallet
 ```
 
-## [Gitopia](https://gitopia.com/home) sitesine giderek keplr cüzdanımızı bağlıyoruz. Get tlore diyerek faucetten 10 adet token alıyoruz. 
+## [Gitopia](https://gitopia.com/home) sitesine giderek keplr cüzdanımızı bağlıyoruz. Get TLORE diyerek faucetten 10 adet token alıyoruz. 
 ![image](https://user-images.githubusercontent.com/73015593/201479305-76f07308-d924-429d-9fde-772bf46b65e9.png)
 
 ## Sync olup olmadığımızı kontrol ediyoruz.
