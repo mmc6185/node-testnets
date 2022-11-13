@@ -145,6 +145,13 @@ gitopiad keys add wallet
 gitopiad status 2>&1 | jq .SyncInfo
 ```
 
+# Hızlı eşleşmek isteyenler için State Sync Servisleri (Mümkün olduğunca önermem)
+
+## ! PPNV Service !#0083'e ait state sync  [Link](https://www.ppnv.space/gitopia)
+
+## polkachu | polkachu.com#1249'a ait state sync [Link](https://polkachu.com/testnets/gitopia/state_sync)
+
+
 ## Validator oluşturuyoruz.
 
 * NodeName kısmına kendi validator ismimizi giriyoruz.
