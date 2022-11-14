@@ -151,6 +151,8 @@ gitopiad status 2>&1 | jq .SyncInfo
 
 ## polkachu | polkachu.com#1249'a ait state sync [Link](https://polkachu.com/testnets/gitopia/state_sync)
 
+## lesnik_utsa#4480'e ait Snapshot [Link](https://teletype.in/@lesnik13utsa/K4wEQmEMj3W#Nc4T)
+
 
 ## Validator oluşturuyoruz.
 
