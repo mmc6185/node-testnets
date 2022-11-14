@@ -10,8 +10,8 @@ https://gitopia.com/CryptoSailors/gitopia-node-installation/tree/master/
 
 ## Sistem gereksinimleri
 ```
-4 CPU
-8-16 GB RAM
+6 vCPU
+16 GB RAM
 200-1000 GB SSD
 ```
 
