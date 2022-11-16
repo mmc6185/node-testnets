@@ -251,14 +251,14 @@ gitopiad tx bank send WalletAddress to_WalletAddress TOKENAMOUNTutlore --chain-i
 
 ## Aktif bir Proposalda oy vermek için
 ```
-gitopiad tx gov vote 1 yes --from WalletName --chain-id=gitopia-janus-testnet-2
+gitopiad tx gov vote 1 yes --from WalletName --chain-id=gitopia-janus-testnet-2 --gas=auto --fees 500utlore
 ```
 
 ## Herhangi bir Validatore token Delegate etmek için 
 * ValopeAddress kısmına validator adresinizi giriyorsunuz
 * TOKENAMOUNT kısmına kaç token girmek istiyorsak onu 1 milyon ile çarparak giriyoruz. Örneğin bir tlore => 1000000utlore
 ```
-gitopiad tx staking delegate ValoperAddress TOKENAMOUNTutlore --from=WalletName --chain-id=gitopia-janus-testnet-2 --gas=auto
+gitopiad tx staking delegate ValoperAddress TOKENAMOUNTutlore --from=WalletName --chain-id=gitopia-janus-testnet-2 --gas=auto --fees 5000utlore
 ```
 
 ## Herhangi bir validatore token redelege etmek için
