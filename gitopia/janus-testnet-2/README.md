@@ -246,7 +246,7 @@ gitopiad query bank balances WalletAddress
 * to_WalletAddress kısmına hedef cüzdan adresinizi giriyorsunuz.
 * TOKENAMOUNT kısmına kaç token girmek istiyorsak onu 1 milyon ile çarparak giriyoruz. Örneğin bir tlore => 1000000utlore
 ```
-gitopiad tx bank send WalletAddress to_WalletAddress TOKENAMOUNTutlore
+gitopiad tx bank send WalletAddress to_WalletAddress TOKENAMOUNTutlore --chain-id=gitopia-janus-testnet-2
 ```
 
 ## Aktif bir Proposalda oy vermek için
