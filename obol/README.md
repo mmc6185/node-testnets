@@ -1,6 +1,9 @@
 # <h1 align="center">Obol network</h1>
 ![obol](https://user-images.githubusercontent.com/73015593/181934677-3ec36fc7-f2c4-45d2-a3c8-2dbd7361e562.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
+
 # Testnet başvuru
 
 ## root yetkisi kazanıyoruz.
