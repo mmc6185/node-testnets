@@ -2,6 +2,8 @@
 
 ![massa](https://user-images.githubusercontent.com/73015593/180018941-20b9e515-6e94-47ef-b928-b8e3ba507691.jpg)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # Linkler
 > ## [Discord](https://discord.gg/massa)<br>
 > ## [Massa website](https://massa.net/)
