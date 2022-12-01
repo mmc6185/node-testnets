@@ -6,6 +6,7 @@ Disk: 1GB ssd
 ```
 ![image](https://user-images.githubusercontent.com/73015593/202112675-13d2fc93-5151-4dd8-b73e-a8860800e94a.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
 
 ## 1- Ana dizine gidiyoruz.
 ```
