@@ -2,6 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/73015593/189446632-60362158-d630-40da-bf8e-73b946a3e56e.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
+
 # Linkler
 > ## [Discord](https://www.gear-tech.io/)<br>
 > ## [Gear website](https://massa.net/)
