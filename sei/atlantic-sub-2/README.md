@@ -2,6 +2,8 @@
 
 ![sei](https://user-images.githubusercontent.com/73015593/187335052-f2e42262-705a-4381-b90f-502d8d007f4e.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # Linkler
 > ## [Discord](https://discord.gg/3E4MGvvr)<br>
 > ## [Sei network website](https://www.seinetwork.io/)
