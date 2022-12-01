@@ -2,6 +2,8 @@
 
 ![clan](https://user-images.githubusercontent.com/73015593/178373417-1770ae94-ed25-4657-b6f8-b3efff6c340f.jpg)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # Linkler
 > ## [Discord](https://discord.gg/PqRuvd8V)<br>
 > ## [Clan network website](https://www.clan.network/)
