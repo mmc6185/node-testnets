@@ -2,6 +2,8 @@
 
 ![minima](https://user-images.githubusercontent.com/73015593/178371122-781308f3-35c7-448c-b62c-e26574dcd04b.jpg)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # Linkler
 > ## [Discord](https://discord.gg/GyDYpVZS)<br>
 > ## [Minima website](https://www.minima.global/)
