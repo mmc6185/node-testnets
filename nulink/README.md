@@ -2,6 +2,8 @@
 
 ![NULINK](https://user-images.githubusercontent.com/107190154/190568136-14f5a7d8-5b15-46fb-8132-4d38a0779171.gif)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # [ORIJINAL FLOOD](https://github.com/brsbrc/Testnetler-ve-Rehberler/edit/main/NuLink/)
 
 **Merhaba, arkadaşar. NuLink testneti için bir rehber hazırladım. Bu rehberle tüm nulink test sürecinde yapmanız gerekenleri yapmış olacaksınız.**
