@@ -1,6 +1,8 @@
 # <h1 align="center">Ollo testnet 0</h1>
 ![image](https://user-images.githubusercontent.com/73015593/192774410-4ec47e6f-6b78-4cbb-9d5f-6494d0c2b309.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # [KJNODES](https://github.com/kj89/testnet_manuals/tree/main/ollo)'DEN ÇEVRİLMİŞTİR
 
 # Linkler
