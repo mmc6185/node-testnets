@@ -2,6 +2,8 @@
 
 ![meson](https://user-images.githubusercontent.com/73015593/178377476-0705f8ea-8bec-42f0-9b3a-cc6292151e73.jpg)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 # Linkler
 > ## [Discord](https://discord.gg/53KYA9gB)<br>
 > ## [Meson network website](https://meson.network/)
