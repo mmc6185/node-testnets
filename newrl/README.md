@@ -1,6 +1,8 @@
 # <h1 align="center">Newrl</h1>
 ![image](https://user-images.githubusercontent.com/73015593/194648553-635061bf-3dbf-4517-a1d6-3a0063f76439.png)
 
+# Hetzner'de 20 Euro bonus [Link](https://hetzner.cloud/?ref=vtZTtbpG2Vcn)   
+
 ### Kaynak döküman : [Link](https://www.publish0x.com/pramonoutomo/newrl-nodes-installation-xxzvrdp)
 ### Kaynak video : [Link](https://www.youtube.com/watch?v=1MfI3_shvsg)
 ### Kaynak Türkçe video : [Link](https://youtu.be/Zxpiv0YQoJA)
