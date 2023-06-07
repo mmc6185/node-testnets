@@ -109,11 +109,31 @@ sudo systemctl restart massa-node
 screen -S massa-node
 ```
 
+## massa-node dizinine gidiyoruz.
+```
+cd ~/massa/massa-node
+```
+
+## Massa node'unu başlatıyoruz.Ardindan CTRL+A + D ile screen'den cikiyoruz.
+```
+./massa-node -p PASSWORD |& tee logs.txt
+```
+![image](https://github.com/mmc6185/node-testnets/assets/73015593/30dac6d1-847b-4743-8e67-0fd03dda393a)
+
 ## Massa client isimli bir screen olusturuyoruz.
 ```
 screen -S massa-client
 ```
 
+## massa-client dizinine gidiyoruz.
+```
+cd ~/massa/massa-client
+```
+
+Massa client başlatıyoruz
+```
+./massa-client
+```
 
 Not : 
 ```
