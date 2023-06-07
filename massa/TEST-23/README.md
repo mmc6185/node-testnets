@@ -33,7 +33,8 @@ sudo apt install make clang curl pkg-config libssl-dev build-essential git jq nc
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180020703-faa62886-4328-45a2-9136-37d70a097f1c.png)
 
-## Rust kurulumu yapıyoruz. 1 diyerek Proceed with installation (default) kurulumu yapıyoruz. (Bu komut, Rust programlama dilinin Rustup aracılığıyla kurulumunu gerçekleştirir. Rustup, Rust programlama dilini yönetmek ve güncellemek için kullanılan bir araçtır.)
+## Rust kurulumu yapıyoruz. 1 diyerek Proceed with installation (default) kurulumu yapıyoruz. 
+(Bu komut, Rust programlama dilinin Rustup aracılığıyla kurulumunu gerçekleştirir. Rustup, Rust programlama dilini yönetmek ve güncellemek için kullanılan bir araçtır.)
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
