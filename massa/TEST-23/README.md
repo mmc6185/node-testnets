@@ -11,9 +11,9 @@
 
 # Sistem gereksinimleri
 ```
-8GB RAM
+16GB RAM
 50-100 GB SSD
-4 vCPU
+6-8 vCPU
 ```
 
 # Node kurulumu
