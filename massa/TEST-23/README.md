@@ -65,7 +65,7 @@ Bu komut, Rust programlama dilinde varsayılan olarak kullanılacak derleme arac
 rustup default nightly
 ```
 
-## massa repository'den `Massa 23.0` binary dosyasını indiriyoruz.
+## massa repository'den `Massa 23.1` binary dosyasını indiriyoruz.
 ```
 wget -O massa.tar.gz https://github.com/massalabs/massa/releases/download/TEST.23.1/massa_TEST.23.1_release_linux.tar.gz
 tar -xzf massa.tar.gz
