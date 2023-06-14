@@ -33,7 +33,8 @@ sudo apt install make clang curl pkg-config libssl-dev build-essential git jq nc
 ```
 ![image](https://user-images.githubusercontent.com/73015593/180020703-faa62886-4328-45a2-9136-37d70a097f1c.png)
 
-## Rust kurulumu yapıyoruz. 1 diyerek Proceed with installation (default) kurulumu yapıyoruz. (Bu komut, Rust programlama dilinin Rustup aracılığıyla kurulumunu gerçekleştirir. Rustup, Rust programlama dilini yönetmek ve güncellemek için kullanılan bir araçtır.)
+## Rust kurulumu yapıyoruz. 1 diyerek Proceed with installation (default) kurulumu yapıyoruz. 
+(Bu komut, Rust programlama dilinin Rustup aracılığıyla kurulumunu gerçekleştirir. Rustup, Rust programlama dilini yönetmek ve güncellemek için kullanılan bir araçtır.)
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -64,9 +65,9 @@ Bu komut, Rust programlama dilinde varsayılan olarak kullanılacak derleme arac
 rustup default nightly
 ```
 
-## massa repository'den `Massa 23.0` binary dosyasını indiriyoruz.
+## massa repository'den `Massa 23.1` binary dosyasını indiriyoruz.
 ```
-wget -O massa.tar.gz https://github.com/massalabs/massa/releases/download/TEST.23.0/massa_TEST.23.0_release_linux.tar.gz
+wget -O massa.tar.gz https://github.com/massalabs/massa/releases/download/TEST.23.1/massa_TEST.23.1_release_linux.tar.gz
 tar -xzf massa.tar.gz
 rm massa.tar.gz
 ```
@@ -109,11 +110,31 @@ sudo systemctl restart massa-node
 screen -S massa-node
 ```
 
+## massa-node dizinine gidiyoruz.
+```
+cd ~/massa/massa-node
+```
+
+## Massa node'unu başlatıyoruz.Ardindan CTRL+A + D ile screen'den cikiyoruz.
+```
+./massa-node -p PASSWORD |& tee logs.txt
+```
+![image](https://github.com/mmc6185/node-testnets/assets/73015593/30dac6d1-847b-4743-8e67-0fd03dda393a)
+
 ## Massa client isimli bir screen olusturuyoruz.
 ```
 screen -S massa-client
 ```
 
+## massa-client dizinine gidiyoruz.
+```
+cd ~/massa/massa-client
+```
+
+Massa client başlatıyoruz
+```
+./massa-client
+```
 
 Not : 
 ```
